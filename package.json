@@ -1,0 +1,24 @@
+{
+  "title": "denverstreetflea",
+  "name": "denverstreetflea",
+  "description": "",
+  "version": "0.1.0",
+  "dependencies": {
+    "grunt-nautilus": "~0.7",
+    "hammerjs": "~1.0",
+    "jquery": "~2.1",
+    "exec": "~0.1"
+  },
+  "devDependencies": {
+    "grunt-autoprefixer": "~2.0.0",
+    "grunt-cmv-git-subtree": "~0.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {},
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
+  "readmeFilename": "README.md"
+}

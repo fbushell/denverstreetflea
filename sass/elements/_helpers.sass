@@ -1,0 +1,191 @@
+// ..............................................
+//
+//  Helpers (serfs)
+//
+//  1. floats
+//  2. text alignment
+//  3. hidden or visible classes
+//  4. highlight
+//  5. clearfix
+//  6. center
+//  7. columns
+//  8. Top / Bottom Spacing
+//  9. Border
+//	10. Vertical Align
+//  11. Background Image Helpers
+//
+// ..............................................
+
+.left
+	float: left
+
+.right
+	float: right
+
+.red
+	color: $red !important
+	&:visited
+		color: $red
+	svg > *
+		fill: $red
+
+.green
+	color: $green !important
+	&:visited
+		color: $green
+	svg > *
+		fill: $green
+
+.blue
+	color: $blue !important
+	&:visited
+		color: $blue
+	svg > *
+		fill: $blue		
+
+.green
+	color: $green !important
+	&:visited
+		color: $green
+
+.blue
+	color: $blue !important
+	&:visited
+		color: $blue
+
+.text-left
+	text-align: left
+
+.text-right
+	text-align: right
+
+.text-center
+	text-align: center
+
+.text-white
+	color: white
+	-webkit-font-smoothing: antialiased
+
+.hide
+	display: none
+
+.visible
+	display: block
+
+.highlight
+	background: #ffff99
+
+.clearfix
+	*zoom: 1
+	&:before
+		display: table
+		line-height: 0
+		content: ""
+	&:after
+		display: table
+		line-height: 0
+		content: ""
+		clear: both
+
+.section-checkbox
+	margin: 26px
+
+.no-margin-bottom
+	margin-bottom: 0 
+
+.margin-top
+	margin-top: $globalSpacing
+
+.margin-bottom
+	margin-bottom: $globalSpacing
+
+.half-margin-top
+	margin-top: $globalSpacing/2
+
+.padding-right
+	padding-right: $globalSpacing
+
+.padding-top-bottom
+	padding: $globalSpacing 0
+
+.padding-side
+	padding: 0 $globalSpacing
+
+.italic
+	font-style: italic
+
+.underline
+	border-bottom: $global-border-width solid
+
+.clearwrap
+	clear: both
+	overflow: hidden
+	margin: 20px 0
+
+.center
+	margin: 0 auto
+
+.columns
+	+column(3)
+
+@media (max-width: 767px)
+	.columns
+		+column(1)
+
+.space
+	padding: $globalSpacing
+
+.space-sides
+	padding: 0 $globalSpacing
+
+.space-top
+	padding-top: $globalSpacing
+
+.space-bottom
+	padding-bottom: $globalSpacing
+
+.space-half
+	padding: ($globalSpacing / 2)
+
+.space-half-top
+	padding-top: ($globalSpacing / 2)
+
+.space-half-bottom
+	padding-bottom: ($globalSpacing / 2)
+
+.bordered
+	border: $global-border-width solid
+
+.border-bottom
+	border-bottom: $global-border-width solid #c1c1c1
+.border-right
+	border-right: $global-border-width solid #c1c1c1
+.border-bottom-dashed
+	border-bottom: 2px dashed #c1c1c1
+.border-dashed
+	border: 2px dashed #c1c1c1
+
+.note 
+	font-size: .85em
+	color: #c1c1c1
+
+.v-wrap
+	display: table
+	width: 100%
+	height: 100%
+
+.v-cell
+	display: table-cell
+	vertical-align: middle
+	width: 100%
+
+.bg-cover
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+
+.bg-contain
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: contain
+

@@ -1,0 +1,139 @@
+@keyframes fadeIn
+  0%
+    transform: scale(0.95)
+    opacity: 0
+  100%
+    transform: scale(1)
+    opacity: 1
+
+@keyframes fadeOut
+  0%
+    transform: scale(1)
+    opacity: 1
+  100%
+    transform: scale(0.95)
+    opacity: 0
+
+@keyframes rotateLoader
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(359deg)
+
+.site-wrap
+  +clearfix
+  background: white
+  height: 100%
+
+.inner-container
+  position: relative
+  width: 95%
+  height: 100%
+  max-width: 1300px
+  margin: 0 auto
+
+.content
+  margin: 0
+  padding: 70px 0
+
+.centered
+  max-width: 1300px
+  margin: 100px auto 50px
+  padding: 0 20px
+  .header-title
+    padding: 0 0 60px 0
+
+.basic-page
+  width: 95%
+  max-width: 1300px
+  margin: 0 auto
+  padding: 100px 0
+
+.padding-top
+  margin: 0 auto 50px
+
+.full-width
+  padding: 0
+
+.container
+  width: 100%
+  min-height: 600px
+  position: relative
+  z-index: 100
+  padding-top: 80px
+  background: white
+  > header
+    padding: 30px 20px
+    h1
+      margin-bottom: 0
+
+.dots
+  text-align: center
+  font-size: 1.6em
+  line-height: 0.2em
+
+.back-to-top
+  visibility: hidden
+  opacity: 0
+  position: fixed
+  right: 20px
+  bottom: 20px
+  border-radius: 50%
+  height: 40px
+  width: 40px
+  background: #FFF
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26)
+  line-height: 40px
+  text-align: center
+  cursor: pointer
+  transition: 300ms ease-in-out
+  &.visible
+    visibility: visible
+    opacity: 1
+
+
+@keyframes rotate-forever
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+
+
+.page-loader
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: $z-cover
+  display: block
+  background: white
+
+.spinner
+  position: absolute
+  left: 50%
+  margin: -24px 0 0 -24px
+  top: 50%
+  animation-duration: 1s
+  animation-iteration-count: infinite
+  animation-name: rotate-forever
+  animation-timing-function: linear
+  width: 48px
+  height: 48px
+  border-width: 3px
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) $green rgba(0, 0, 0, 0)
+  border-style: solid
+  border-radius: 50%
+  display: block
+  transition: 500ms ease-out  
+
+.page-loader.loaded .spinner
+  opacity: 0
+
+
+
+
+@media(max-width: 850px)
+  .back-to-top
+    right: 10px
+    bottom: 10px

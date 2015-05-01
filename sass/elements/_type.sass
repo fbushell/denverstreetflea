@@ -1,0 +1,144 @@
+// ..............................................
+//
+//  This is my type of section...
+//
+// ..............................................
+
+p
+	margin: 0 0 15px
+
+.lead
+	font-size: 1.2em
+
+small
+	font-size: .85em
+
+.monster
+	font-size: 150px
+	font-family: $headingsFontFamily
+	font-weight: $headingsFontWeight
+
+strong
+	font-weight: $boldFontWeight
+
+em
+	font-style: italic
+
+cite
+	font-style: normal
+
+h1, h2, h3, h4, h5, h6
+	margin: 0 0 10px 0
+	font-family: $headingsFontFamily
+	text-rendering: optimizelegibility
+	font-style: normal
+	small
+		font-size: 0.65em
+		color: $gray
+	strong
+		font-weight: 400
+
+h1
+	font-size: 7rem
+	line-height: 1.25
+	margin-bottom: 30px
+	font-weight: $baseFontWeight
+
+h2
+	font-size: 2rem
+	line-height: 1.4
+	margin-bottom: 30px !important
+	font-weight: $baseFontWeight
+
+h3
+	font-size: 1.4rem
+	line-height: 1.13636364
+	font-weight: $baseFontWeight
+
+h4
+	font-size: 1.1rem
+	line-height: 1.11111111
+	font-weight: $baseFontWeight
+
+h5
+	font-size: 1rem
+	line-height: inherit
+	font-weight: $headingsFontWeight
+
+h6
+	font-size: 0.875rem
+	line-height: inherit
+	font-weight: $headingsFontWeight
+
+@media (max-width: $small)
+	html
+		font-size: 14px
+
+ul, ol
+	padding: 0
+	margin: 0 0 10px 20px
+	list-style: disc
+
+ul
+	ul, ol
+		margin-bottom: 0
+
+ol
+	ol, ul
+		margin-bottom: 0
+
+li
+	line-height: inherit
+	display: list-item
+
+ul.unstyled, ol.unstyled
+	margin-left: 0
+	list-style: none
+
+ul.inline 
+	margin: 0 0 10px
+	& > li
+		display: inline-block
+		padding-left: 5px
+		padding-right: 5px
+
+dl
+	margin-bottom: 20px
+
+dt
+	font-weight: $boldFontWeight
+
+dd
+	margin-left: 0
+
+abbr
+	&[title]
+		cursor: help
+		border-bottom: 1px dotted $grayLight
+
+blockquote
+	padding: ($globalSpacing / 2) 0 ($globalSpacing / 2) ($globalSpacing / 2)
+	font-size: 2.5rem
+	line-height: inherit
+	span:first-of-type
+		margin-left: -25px
+	p
+		margin-bottom: 0
+		text-indent: -.55em
+	cite
+		display: none
+		font-size: 0.8em
+		color: $gray
+		display: block
+		margin-top: 15px
+		font-style: italic
+		&:before
+			content: '\2014 \00A0'
+
+q
+	&:before, &:after
+		content: ""
+
+blockquote
+	&:before, &:after
+		content: ""

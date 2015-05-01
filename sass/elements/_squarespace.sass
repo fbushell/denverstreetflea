@@ -1,0 +1,286 @@
+// Overides to the Squarespace grid system
+.sqs-layout > .sqs-row
+  margin-left: -10px
+  margin-right: -10px
+
+[class*=sqs-col] 
+  .sqs-block
+    padding-left: 10px !important
+    padding-right: 10px !important
+    padding-bottom: 10px !important
+    padding-top: 10px !important
+
+  .sqs-block:not(.float):first-child
+    padding-top: 10px !important 
+
+
+// Buttons
+.sqs-block-button .sqs-block-button-element--medium
+  font-weight: 300 !important
+  font-size: 1rem !important
+  letter-spacing: 0.08em !important
+
+body:not(.button-style-default) .sqs-editable-button, 
+body:not(.button-style-default) .sqs-editable-button-font,
+.sqs-editable-button
+  font-family: $baseFontFamily !important
+  font-weight: $baseFontWeight !important
+  letter-spacing: 0 !important
+  text-transform: capitalize !important
+  padding: 12px 40px !important
+  background: $black !important
+
+
+//Image Overlay
+.sqs-block-image .image-block-outer-wrapper
+
+  &.layout-caption-below 
+    .image-caption-wrapper
+      padding: 20px 20px 40px 20px
+      position: relative
+      top: -40px
+      width: 60%
+      left: 20%
+      background: white
+    p
+      font-size: 1rem
+      display: block
+      margin: 0
+      text-align: center
+      strong
+        font-family: $headingsFontFamily
+        font-size: 1.4rem
+        font-weight: 400
+
+  &.layout-caption-overlay
+    .image-caption-wrapper
+      top: 0px !important
+      bottom: 0px !important
+      left: 0px !important
+      right: 0px !important
+      background: transparent !important
+      padding: 10% !important
+      cursor: pointer
+      transition: 300ms ease-out !important
+      .image-caption
+        transition: none !important
+        display: table !important
+        height: 100% !important
+        width: 100% !important
+        background: white
+        p
+          color: $black !important
+          font-size: 1rem !important
+          font-family: $headingsFontFamily
+          display: table-cell !important
+          vertical-align: middle !important
+          text-align: center
+          padding: 0 30px
+
+  .image-block-outer-wrapper.layout-caption-overlay-hover .image-caption
+    margin-bottom: 0 !important
+
+// Edit forms
+.sqs-frontend-node-header-widget-content
+  height: 44px
+
+
+// Video Player Controls
+.sqs-video-icon
+  background-color: white
+  background-image: none !important
+  opacity: 1 !important
+  height: 120px !important
+  width: 120px !important
+  margin-top: -60px !important
+  margin-left: -60px !important
+  border-radius: 50%
+  transition: 300ms ease-out
+  &:before
+    content: 'Play Video'
+    position: absolute
+    left: 0
+    width: 100%
+    top: 52px
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 0.08
+    font-size: 0.8rem
+    font-weight: 600
+
+.sqs-block-html
+  width: 100% !important
+  max-width: 100% !important
+  margin: 0 !important
+
+
+.sqs-gallery-block-grid .slide .margin-wrapper .image-slide-title
+  display: block
+
+// Slider
+.sqs-gallery-block-slideshow .slide.loaded .meta
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  margin: 0 !important
+  padding: 0 !important
+  height: 100% !important
+  width: 100% !important
+  max-width: 100% !important
+
+.sqs-gallery-block-slideshow .meta-inside
+  position: absolute
+  margin: 0 !important
+  padding: 0 30px
+  top: 50%
+  left: 0
+  right: 0
+  width: 100%
+  transform: translateY(-50%)
+
+.sqs-gallery-block-slideshow .meta .meta-description, 
+.sqs-gallery-block-slideshow .meta .meta-description
+  p
+    font-size: 1.4rem
+    font-family: $headingsFontFamily
+    margin: 0
+  strong
+    font-size: 7rem
+    margin-bottom: 30px
+    line-height: 1
+  a
+    display: inline-block
+    padding: 15px 40px
+    background: white
+    color: $black
+    font-size: 1rem
+    margin: 15px 0 0 0 !important
+    font-family: $baseFontFamily
+    cursor: pointer
+    transition: 300ms $bezier
+    text-decoration: none
+    &:hover
+      background: rgba(255,255,255,0.9)
+
+// p,
+// span,
+// strong
+//  font-size: 1rem !important
+//  line-height: $baseLineHeight !important
+
+
+// Lightbox
+// .yui3-lightbox2
+//  position: fixed
+//  top: 0 
+//  right: 0
+//  bottom: 0
+//  left: 0
+//  z-index: 420420420
+//  a
+//    border-bottom: 0 !important
+
+
+// Share buttons
+.squarespace-social-buttons.button-style .ss-social-button-wrapper
+  background: white !important
+  box-shadow: none !important
+  padding: 0 !important
+
+.squarespace-social-buttons.button-style .ss-social-button-wrapper .ss-social-button
+  font: 1rem $baseFontFamily !important
+  font-weight: $baseFontWeight !important
+  color: $black !important
+  background: none !important
+
+.squarespace-social-buttons .ss-social-list-wrapper
+  position: relative !important
+  height: 0 !important
+
+.squarespace-social-buttons .ss-social-list-wrapper .ss-social-button-list
+  padding: 10px !important
+  border-radius: 0 !important
+  transform: translate(50%, -100%)
+  border: 0 $gray !important
+  background: white !important
+  position: absolute
+  top: 0
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26)
+  filter: grayscale(100%)
+
+.squarespace-social-buttons .ss-social-list-wrapper .ss-social-button-list .ss-social-button-container
+  margin-bottom: 5px !important
+
+
+// Search results page
+.sqs-search-page
+  padding-top: 20px
+  padding-bottom: 30px
+
+.sqs-search-page-input
+  padding: 5px 5px 5px 45px
+  background-size: 17px
+  border-bottom: 1px solid $gray !important
+  max-width: 800px
+  margin: 0 auto 40px !important
+  form
+    margin: 0 !important
+  input
+    font-size: 1.2rem !important
+    margin: 0 !important
+
+.sqs-search-page-result
+  max-width: 800px
+  padding: 0 10px
+  margin: 0 auto
+
+.sqs-search-page-input
+  border-width: 0 0 1px 0 !important
+
+.sqs-search-page-item .sqs-main-image-container
+  width: 0% !important
+
+.sqs-search-page-item .sqs-main-content
+  float: none
+  width: 100%
+
+.sqs-search-container-list .search-results
+  border: none !important
+
+.sqs-search-container-item
+  border: none !important
+  opacity: 0.3
+  &:hover
+    opacity: 1
+
+.sqs-search-container .search-notice
+  max-width: 800px
+  margin: 0 auto
+  font-weight: 1rem !important
+
+// Blockquote
+blockquote span:first-of-type
+  margin-left: -14px !important
+
+blockquote span
+  font-size: inherit !important
+
+
+// HR tags
+.sqs-block-horizontalrule hr
+  color: $black
+  background-color: $black
+
+
+@media (max-width: 568px)
+  [class*=sqs-col]
+    width: 100% !important
+    float: none !important
+  .sqs-gallery-block-grid
+    .sqs-gallery-design-grid-slide
+      width: 33% !important
+      img
+        width: 100% !important
+        height: auto !important

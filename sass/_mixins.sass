@@ -1,0 +1,48 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+//  M I X I N S
+//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@mixin clearfix
+  &:before,
+  &:after 
+    content: " "
+    display: table
+  &:after 
+    clear: both
+  
+@mixin column($count)
+  -moz-column-count: $count
+  -moz-column-gap: 30px
+  -webkit-column-count: $count
+  -webkit-column-gap: 30px
+  column-count: $count
+  column-gap: 30px
+
+@keyframes rainbow
+  0%
+    background: $red
+  16%
+    background: $purple
+  32%
+    background: $pink
+  48%
+    background: $blue
+  54%
+    background: $green
+  85%
+    background: $yellow
+  96%
+    background: $orange
+  100%
+    background: $red
+
+
+// Transition
+@mixin transition() 
+  transition: 0.25s ease-in-out
+
+// Box- Shadow with Vertial and Horizontal vars
+@mixin shadow($v, $h)
+  box-shadow: $v $h 5px rgba(0,0,0,0.26)

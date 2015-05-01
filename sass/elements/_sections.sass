@@ -1,0 +1,23 @@
+#too-small
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background: $primaryColor
+  color: white
+  -webkit-font-smoothing: antialiased
+  z-index: 420420420
+  display: none
+  +transition
+  & > div
+    position: absolute
+    width: 100%
+    padding: 0 40px
+    font-size: 1.5em
+    top: 50%
+    text-align: center
+
+@media (max-width: 767px)
+  #too-small
+    display: block

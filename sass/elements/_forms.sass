@@ -1,0 +1,521 @@
+//
+// F O R M S
+// --------------------------------------------------
+
+.new-employee-dropdown
+  overflow: hidden
+  transition: 600ms ease-out
+  &.not-adding
+    height: 0
+  &.adding-employee
+    height: 800px
+
+.ember-select.select
+  width: 20%
+  display: inline
+  &.full-select
+    width: 100%
+
+button, input, optgroup, select, textarea
+  line-height: inherit
+  margin: 0
+
+fieldset 
+  padding: 0
+  margin: 0
+  border: 0
+  min-width: 0
+
+legend 
+  display: block
+  width: 100%
+  padding: 0
+  margin-bottom: $baseLineHeight
+  font-size: $baseFontSize
+  line-height: inherit
+  color: $black
+  border: 0
+  border-bottom: 1px solid $black
+
+body label 
+  display: inline-block
+  margin-bottom: 5px
+  font-family: $headingsFontFamily
+  font-weight: $headingsFontWeight
+  font-size: 0.8em
+
+
+//
+// Inputs
+//
+input[type="search"] 
+  box-sizing: border-box
+
+// Remove yellow background on chrome
+input:-webkit-autofill
+  -webkit-box-shadow: 0 0 0px 1000px $grayLight inset
+
+input:focus:-webkit-autofill
+  -webkit-box-shadow: 0 0 0px 1000px white inset
+
+// Position radios and checkboxes better
+input[type="radio"],
+input[type="checkbox"] 
+  margin: 4px 0 0
+  margin-top: 1px \9 /* IE8-9 */
+  line-height: normal
+
+// Set the height of file controls to match text inputs
+input[type="file"] 
+  display: block
+
+// Make range inputs behave like textual form controls
+input[type="range"] 
+  display: block
+  width: 100%
+
+// Make multiple select elements height not fixed
+select[multiple],
+select[size] 
+  height: auto
+
+// Focus for file, radio, and checkbox
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus 
+  outline: none
+
+// Adjust output element
+output 
+  display: block
+  padding-top: ($globalSpacing / 2)
+  font-size: $baseFontSize
+  line-height: $baseLineHeight
+  color: $black
+
+div.select
+  position: relative
+  width: 100%
+  margin-bottom: 10px
+  display: block
+  &.half
+    max-width: 50%
+    margin: 0 0 10px 0
+  &.sm
+    max-width: 150px
+  // &:after
+  //   content: "▼"
+  //   right: 13px 
+  //   top: 2px
+  //   bottom: 2px
+  //   padding: 15px 0 0 10px
+  //   border-left: $input-border-width solid $input-border
+  //   font-size: 11px
+  //   position: absolute
+  //   pointer-events: none
+  select
+    background-image: url('/assets/images/icons/icon_files/select-arrow.svg')
+    background-color:  $grayLight
+    background-repeat: no-repeat
+    background-position: 97% center
+    font-family: $baseFontFamily
+    font-size: $baseFontSize
+    font-weight: $baseFontWeight
+    color: $input-color
+    margin: 0
+    width: 100%
+    border: none
+    border-radius: 4px
+    padding: 18px 30px 15px 10px
+    outline: none
+    display: inline-block
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    cursor: pointer
+    text-overflow: ''
+    text-indent: 0.1px
+    &:focus
+      box-shadow: none
+
+select
+  font-family: $baseFontFamily
+  font-size: $baseFontSize
+  font-weight: $baseFontWeight
+  background-image: url('/assets/images/icons/icon_files/select-arrow.svg')
+  background-color:  $grayLight
+  background-repeat: no-repeat
+  background-position: 97% center
+  color: $input-color
+  margin: 0
+  width: 100%
+  border: none
+  border-radius: 4px
+  padding: 18px 30px 15px 10px
+  outline: none
+  display: inline-block
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  cursor: pointer
+  text-overflow: ''
+  text-indent: 0.1px
+  &:focus
+    box-shadow: none
+
+select:focus
+  box-shadow: none !important
+
+.input-wrap
+  input
+    max-width: 300px
+    float: left
+
+
+textarea,
+input, 
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"]
+  display: block
+  position: relative
+  width: 100%
+  padding: $input-padding
+  margin: 0 0 ($globalSpacing / 2) 0
+  height: $input-height
+  font-family: $baseFontFamily
+  font-size: $baseFontSize
+  font-weight: $baseFontWeight
+  color: $input-color
+  background-color: $input-bg
+  border: $input-border-width solid $input-border
+  +transition
+  &:focus
+    outline: none
+    //box-shadow: inset 0 -2px 0 $gray
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & 
+    cursor: not-allowed
+    background-color: $input-disabled
+    opacity: 1
+  &.half
+    max-width: 50%
+  &.sm
+    max-width: 150px
+
+.dollar
+  position: relative
+  input
+    padding-left: 20px
+  &:before
+    content: "$"
+    position: absolute
+    left: 7px
+    top: 18px
+    color: $gray
+    z-index: 10
+
+
+// Placeholders
+input::-webkit-input-placeholder
+  color: $grayDark
+  font-weight: $baseFontWeight
+  opacity: 1
+  -webkit-font-smoothing: antialiased
+
+input:-moz-placehlder
+  color: $grayDark
+  font-weight: $baseFontWeight
+  opacity: 1
+  -webkit-font-smoothing: antialiased
+
+input::-moz-placehlder
+  color: $grayDark
+  font-weight: $baseFontWeight
+  opacity: 1
+  -webkit-font-smoothing: antialiased
+
+input:-ms-input-placeholder
+  color: $grayDark
+  font-weight: $baseFontWeight
+  opacity: 1
+  -webkit-font-smoothing: antialiased
+
+textarea
+  resize: none
+  min-height: 150px
+
+// Reset height for textareas
+textarea.form-control 
+  height: auto
+
+
+// Search inputs in iOS
+//
+// This overrides the extra rounded corners on search inputs in iOS so that our
+// `.form-control` class can properly style them. Note that this cannot simply
+// be added to `.form-control` as it's not specific enough. For details, see
+// https://github.com/twbs/bootstrap/issues/11586.
+input[type="search"] 
+  -webkit-appearance: none
+
+
+// Special styles for iOS date input
+//
+// In Mobile Safari, date inputs require a pixel line-height that matches the
+// given height of the input.
+input[type="date"] 
+  line-height: $baseLineHeight
+
+
+form
+  margin-bottom: ($globalSpacing / 2)
+  button
+    margin-top: $globalSpacing / 2
+  .cancel
+    color: $gray
+    text-decoration: none
+    border: none
+    margin: 0 $globalSpacing
+    position: relative
+    top: 10px
+    &:hover
+      color: $black
+
+// Form groups
+//
+// Designed to help with the organization and spacing of vertical forms. For
+// horizontal forms, use the predefined grid classes.
+.form-group 
+  +clearfix
+  &.form-half > *
+    float: left
+    width: 49.25%
+    margin-left: 1.5%
+    &:first-child
+      margin-left: 0
+  &.form-third > *
+    float: left
+    width: 32.3%
+    margin-left: 1.5%
+    &:first-child
+      margin-left: 0
+  &.form-fourth > *
+    float: left
+    width: 23.75%
+    margin-left: 1.5%
+    &:first-child
+      margin-left: 0
+
+//
+// Checkboxes and Radio buttons
+//
+input[type="checkbox"],
+input[type="radio"]
+  visibility: hidden
+  display: none
+
+input[type="checkbox"]
+  &:disabled + label
+    cursor: not-allowed
+    color: $input-disabled
+    &:before
+      background-color: $input-disabled
+      color: darken($input-disabled, 20%) !important
+      border: $input-border-width solid darken($input-disabled, 20%) !important
+  &.inline + label
+    display: inline-block
+    margin: 0px 20px 10px 0
+  & + label
+    display: block
+    width: auto
+    height: 16px
+    margin: 0px 10px 10px 0
+    padding-left: 23px
+    vertical-align: middle
+    cursor: pointer
+    position: relative
+    line-height: 1.4
+    font-size: $baseFontSize
+    &:before
+      content: " "
+      color: $gray
+      background: $input-bg
+      position: absolute
+      left: 0
+      top: 1px
+      height: 16px
+      width: 16px
+      font-size: 13px
+      text-align: center
+      line-height: 14px
+      border: $input-border-width solid $gray
+      border-radius: 4px
+
+input[type="checkbox"]:checked + label:before
+  content: "✓"
+  color: $black
+  font-weight: bold
+  border: $input-border-width solid $black
+
+input[type="radio"] 
+  &:disabled + label
+    cursor: not-allowed
+    color: $input-disabled
+    &:before
+      background-color: $input-disabled
+      color: darken($input-disabled, 20%) !important
+      border: 1px solid darken($input-disabled, 20%) !important
+    &:after
+      color: darken($input-disabled, 20%) !important
+  & + label
+    display: block
+    width: auto
+    height: 20px
+    margin: -1px 4px 10px 0
+    padding-left: 30px
+    vertical-align: middle
+    cursor: pointer
+    position: relative
+    line-height: 1.4
+    font-size: $baseFontSize
+    &:before
+      content: " "
+      color: $gray
+      position: absolute
+      left: 0
+      height: 20px
+      width: 20px
+      font-size: 38px
+      text-align: center
+      line-height: 0.5
+      border: $input-border-width solid $gray
+      border-radius: 50%
+
+input[type="radio"]:checked + label
+  &:before
+    color: $black
+    border: $input-border-width solid $black
+  &:after
+    content: "•"
+    position: absolute
+    left: 2px
+    font-size: 35px
+    line-height: 0
+    top: 11px
+    color: inherit
+
+
+
+//
+// Toggles
+//
+label.toggle
+  position: relative
+  height: 30px
+  margin-bottom: 10px
+  display: block
+  input[type="checkbox"] 
+    &:checked + div
+      background-color: $primaryColor
+      border: 2px solid $primaryColor
+      .toggle-circle
+        background: white
+        left: 42px
+        &:after
+          content: "ON"
+          position: absolute
+          right: 30px
+          color: white
+          line-height: 21px
+          +transition
+    & + div
+      overflow: hidden
+      width: 70px
+      position: relative
+      height: 30px
+      background-color: $bodyBackground
+      border: $input-border-width solid $gray
+      border-radius: 15px
+      cursor: pointer
+      +transition
+      .toggle-circle
+        height: 20px
+        width: 20px
+        background: $gray
+        border-radius: 50%
+        position: absolute
+        left: 5px
+        top: 3px
+        +transition
+        &:after
+          content: "OFF"
+          position: absolute
+          right: -30px
+          color: $gray
+          line-height: 21px
+  & > span
+    position: relative
+    right: -80px
+    top: -26px
+    font-size: $baseFontSize
+    cursor: pointer
+
+
+// Inline forms
+//
+// Make forms appear inline(-block) by adding the `.form-inline` class. Inline
+// forms begin stacked on extra small (mobile) devices and then go inline when
+// viewports reach <768px.
+//
+// Requires wrapping inputs and labels with `.form-group` for proper display of
+// default HTML form controls and our custom form controls (e.g., input groups).
+//
+.form-inline 
+  @media (min-width: 768px) 
+    // Inline-block all the things for "inline"
+    .form-group 
+      display: inline-block
+      margin-bottom: 0
+      vertical-align: middle
+    select, 
+    textarea, 
+    input,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"] 
+      display: inline-block
+      width: auto // Prevent labels from stacking above inputs in `.form-group`
+      vertical-align: middle
+      margin: 0
+  
+    // Input groups need that 100% width though
+    .input-group > .form-control 
+      width: 100%
+
+    .control-label 
+      margin-bottom: 0
+      vertical-align: middle

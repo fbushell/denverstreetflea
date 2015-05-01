@@ -1,0 +1,153 @@
+.event-banner
+  position: relative
+  overflow: hidden
+  min-height: 600px
+  width: 100%
+  padding: 180px 0 155px
+  top: -20px
+  &.no-main-image
+    background: $green
+  .color-overlay
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(0, 0, 0, 0.3)
+    z-index: 99
+  #thumbnail
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    > div
+      height: 100%
+      width: 100%
+    img
+      height: auto !important
+      width: 100% !important
+
+  .desc-wrapper
+    z-index: $z-1
+    position: absolute
+    width: 100%
+    top: 50%
+    right: 0
+    left: 0
+    transform: translateY(-50%)
+    max-width: 956px
+    margin: 0 auto
+    padding: 0 30px
+    text-align: center
+    text-rendering: optimizeLegibility
+    color: white
+    p
+      font-size: 1.4rem
+      font-family: $headingsFontFamily
+      margin: 0
+    strong
+      font-size: 7rem
+      margin-bottom: 30px
+      line-height: 1
+      font-weight: 400
+    a
+      display: inline-block
+      padding: 15px 40px
+      background: white
+      color: $black
+      font-size: 1rem
+      margin: 15px 0 0 0
+      font-family: $baseFontFamily
+      cursor: pointer
+      transition: 300ms $bezier
+      border: none
+      &:hover
+        background: rgba(255,255,255,0.9)
+  .parallax-header
+    position: relative
+    top: -100%
+
+
+
+
+.event-navigation
+  position: absolute
+  left: 0
+  width: 30%
+  padding: 0 30px 30px 40px
+  overflow: hidden
+  word-wrap: break-word
+  h1
+    color: gray
+    position: relative
+    margin-bottom: 15px
+    cursor: pointer
+    transition: 300ms $bezier
+    &.active
+      color: $black
+      &::before
+        content: ""
+        position: absolute
+        left: -39px
+        top: 7px
+        height: 30px
+        width: 30px
+        background: url('assets/weed.png') no-repeat center center
+        background-size: 30px
+        border-radius: 50%
+
+
+.event-content
+  position: relative
+  left: 30%
+  width: 70%
+
+.scroll-section
+  padding-bottom: 150px
+  &:last-child
+    padding-bottom: 0
+
+
+@media (max-width: $small)
+  .event-banner
+    min-height: 300px
+
+  .event-navigation
+    width: 23%
+    padding-left: 20px
+    h1
+      font-size: 1.5rem
+      &.active::before
+        background-size: 19px
+        left: -25px
+        top: -4px
+
+  .event-content
+    left: 23%
+    width: 77%
+
+  .event-banner .desc-wrapper strong
+    font-size: 5rem
+
+  .content
+    padding: 30px 0 0
+
+@media (max-width: $phone)
+  .event-navigation
+    width: 11%
+    padding: 30px 0 10px
+    h1
+      font-size: 0
+      height: 10px
+      width: 10px
+      background: $gray
+      border-radius: 50%
+      &.active::before
+        background-size: 19px
+        left: -10px
+        top: -14px
+
+  .event-content
+    left: 11%
+    width: 90%

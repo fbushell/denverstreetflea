@@ -1,0 +1,32 @@
+.tooltip
+  display: inline
+  position: relative
+.tooltip
+  &:hover:after
+    background: white
+    bottom: 36px
+    color: $gray
+    -webkit-font-smoothing: antialiased
+    content: attr(title)
+    left: -120%
+    padding: 10px
+    position: absolute
+    z-index: 200
+    min-width: 100px
+    word-wrap: break-word
+    text-align: center
+    font-size: 0.7em
+    line-height: 1.2
+    text-transform: initial
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26)
+    font-style: normal
+  // &:hover:before
+    // border: solid
+    // border-color: #111 transparent
+    // border-width: 6px 6px 0 6px
+    // bottom: 35px
+    // content: ""
+    // left: 33%
+    // position: absolute
+    // z-index: 99
+    
