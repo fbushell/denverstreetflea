@@ -1,13 +1,23 @@
 <div class="content-wrap clearfix" role="main">
-	<header>
+<!-- 	<header>
 		{.section collection}
 		  <h1 class="text-center">{title}</h1>
 		{.end}
-	</header>
-  <div class="inner-container">
-    <div class="content pasic-page-content clearfix"  data-content-field="main-content">
-	      {squarespace.main-content}
-	    </div>
-	  </div>
+	</header> -->
+
+	<div class="shape-container">
+		<div class="shape-wrap">
+			<div class="topper">
+
+			  <div class="inner-container">
+			    <div class="content pasic-page-content clearfix"  data-content-field="main-content">
+				      {squarespace.main-content}
+				    </div>
+				  </div>
+				</div>
+
+			</div>
+		</div>
 	</div>
+
 </div>
