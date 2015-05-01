@@ -1,8 +1,0 @@
-
-    </div>
-
-    <squarespace:script src="site.js" combo="true" />
-    {squarespace-footers}
-    
-  </body>
-</html> 
