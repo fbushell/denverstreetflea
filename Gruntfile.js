@@ -104,6 +104,15 @@ module.exports = function ( grunt ) {
                     target: "template"
                 }
             }
+        },
+        git_subtree_pull: {
+            subtree: {
+                options: {
+                    source: "https://denverstreetflea.squarespace.com/template.git",
+                    branch: "master",
+                    target: "template"
+                }
+            }
         }
     });
 
