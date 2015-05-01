@@ -6,14 +6,14 @@ module.exports = function ( grunt ) {
     var pubRoot = ".",
 
         sassRoot = "./sass",
-        cssRoot = "./sqs_template/styles",
+        cssRoot = "./template/styles",
         // fontsRoot = "./sqs_template/assets/fonts",
         // imgRoot = "./sqs_template/assets/images",
 
         jsRoot = "./js",
         appRoot = jsRoot + "/app",
         libRoot = jsRoot + "/lib",
-        distRoot = "sqs_template/scripts";
+        distRoot = "template/scripts";
 
     // Project configuration.
     grunt.initConfig({
