@@ -92,7 +92,7 @@ module.exports = function ( grunt ) {
                 options: {
                     source: "https://denverstreetflea.squarespace.com/template.git",
                     branch: "master",
-                    target: "sqs_template"
+                    target: "template"
                 }
             }
         },
@@ -101,7 +101,7 @@ module.exports = function ( grunt ) {
                 options: {
                     source: "https://denverstreetflea.squarespace.com/template.git",
                     branch: "master",
-                    target: "sqs_template"
+                    target: "template"
                 }
             }
         }
