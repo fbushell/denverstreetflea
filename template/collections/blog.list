@@ -1,0 +1,63 @@
+{.section categoryFilter}
+  <p>Filtering by Category: {@|safe}</p>
+{.end}
+
+{.section tagFilter}
+  <p>Filtering by Tag: {@|safe}</p>
+{.end}
+
+{.if authorFilter}
+  <p>Filtering by Author: {author.displayName}</p>
+{.end}
+
+
+{.repeated section items}
+
+  <article id="post-{id}" class="{@|item-classes} blog-article" data-item-id="{id}">
+    <h2 class="text-center" data-content-field="title">
+      {.passthrough?}
+        <a href="{sourceUrl}" target="_blank">{title}</a>
+      {.or}
+        <a href="{fullUrl}">{title}</a>
+      {.end}
+    </h2>
+      
+    <div class="date">
+      <time datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time>
+    </div>        
+
+    {.main-image?}  
+      <div class="blog main-image">
+        <img {@|image-meta} />
+      </div>
+    {.end}
+
+    {.if excerpt}
+      <div class="blog-excerpt"> {excerpt} </div>
+    {.end}
+    <a href="{fullUrl}"> <button class="read-more-link">Read More</button> </a>
+
+  </article>
+
+{.end}
+  
+
+{.if pagination}
+  <nav class="pagination">
+
+    {.if pagination.prevPage}
+      <a href="{pagination.prevPageUrl}" class="prev" title="prev">Previous Page</a>
+    {.or}
+      <a title="prev" class="disabled prev">Previous Page</a>
+    {.end}
+
+    <!--OLDER PAGE-->
+
+    {.if pagination.nextPage}
+      <a href="{pagination.nextPageUrl}" title="next" class="next">Next Page</a>
+    {.or}
+      <a title="next" class="next disabled">Next Page</a>
+    {.end}
+
+  </nav>
+{.end}
