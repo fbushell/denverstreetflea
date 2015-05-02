@@ -12,9 +12,4 @@
     </div>
 
     <div class="site-wrap">
-      
-      <header class="main-header">
-        <squarespace:navigation navigationId="mainNav" template="mainNav" />
-      </header>
-
       <div class="container">

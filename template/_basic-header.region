@@ -7,28 +7,5 @@
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
-    <div class="menu-btn">
-      <a href="/">
-        <div class="hamburger-container back-arrow">
-          <div class="hamburger"></div>
-        </div>
-      </a>
-    </div>
-
-
-    <div id="menu-area" class="main-menu">
-      <ul>
-        {.section collection}
-          {.repeated section collections}
-            <li class="{urlId}"> 
-              <a href="#{urlId}-section">
-                <h4>{title}</h4>
-              </a>
-            </li>
-          {.end}
-        {.end}
-      </ul>
-    </div>
-
 
     <div class="container">

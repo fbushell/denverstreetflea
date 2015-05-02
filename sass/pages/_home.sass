@@ -1,12 +1,82 @@
 .shape-container
   transform-origin: 0 0
-  transform: translateX(60px) translateY(-20px)
+  transform: translateX(90px) translateY(150px)
+  position: relative
+  .drop
+    transform-origin: 100% 0
+    transform: skewY(-6deg) translateX(-10px) translateY(-10px)
+    width: 70%
+    border: none
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 5
+    border: 2px solid $blue
+    // background: #3239ff
+    // background: -moz-linear-gradient(top, #3239ff 0%, #56ffc4 100%)
+    // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3239ff), color-stop(100%,#56ffc4))
+    // background: -webkit-linear-gradient(top, #3239ff 0%,#56ffc4 100%) 
+    // background: -o-linear-gradient(top, #3239ff 0%,#56ffc4 100%)
+    // background: -ms-linear-gradient(top, #3239ff 0%,#56ffc4 100%) 
+    // background: linear-gradient(to bottom, #3239ff 0%,#56ffc4 100%)
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3239ff', endColorstr='#56ffc4',GradientType=0 )
+  .drop-too
+    transform-origin: 100% 0
+    transform: skewY(-6deg) translateX(-20px) translateY(-20px)
+    width: 70%
+    border: none
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 1
+    border: 2px solid $blue
+    // background: #3239ff
+    // background: -moz-linear-gradient(top, #3239ff 0%, #56ffc4 100%)
+    // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3239ff), color-stop(100%,#56ffc4))
+    // background: -webkit-linear-gradient(top, #3239ff 0%,#56ffc4 100%) 
+    // background: -o-linear-gradient(top, #3239ff 0%,#56ffc4 100%)
+    // background: -ms-linear-gradient(top, #3239ff 0%,#56ffc4 100%) 
+    // background: linear-gradient(to bottom, #3239ff 0%,#56ffc4 100%)
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3239ff', endColorstr='#56ffc4',GradientType=0 )
+  .drop-tree
+    transform-origin: 100% 0
+    transform: skewY(-6deg) translateX(-30px) translateY(-30px)
+    width: 70%
+    border: none
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 1
+    border: 2px solid $blue
+.svg-title
+  position: fixed
+  top: 50% 
+  right: 0
+  transform: translateY(-50%)
+  width: 20%
+  svg
+    width: 100%
+    height: 100%
+    fill: $blue
+
+
 
 .shape-wrap
   transform-origin: 100% 0
-  transform: skewY(6deg)
+  transform: skewY(-6deg)
+  width: 70%
+  border: none
+  position: relative
+  background: $blue
+  color: white
+  z-index: 10
   .topper
-    width: 60%
     border: 3px solid
     border-radius: 50%
     padding-bottom: 5%
