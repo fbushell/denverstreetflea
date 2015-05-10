@@ -1,4 +1,4 @@
-<nav>
+<nav class="main-nav">
   <ul>
 
     {.repeated section items}

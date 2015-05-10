@@ -1,24 +1,33 @@
 @keyframes fadeIn
-  0%
-    transform: scale(0.95)
+  from
     opacity: 0
-  100%
-    transform: scale(1)
+    transform: translate3d(0,30px,0)
+  to
     opacity: 1
+    transform: translate3d(0,0,0)
 
 @keyframes fadeOut
   0%
-    transform: scale(1)
     opacity: 1
+    transform: translate3d(0,0,0)
   100%
-    transform: scale(0.95)
     opacity: 0
+    transform: translate3d(0,30px,0)
 
 @keyframes rotateLoader
   0%
     transform: rotate(0deg)
   100%
     transform: rotate(359deg)
+
+.content-wrap
+  position: relative
+  transform: translate3d(0,0,0)
+  transition: opacity .44s cubic-bezier(.25,.46,.45,.94) .11s,transform .44s cubic-bezier(.25,.46,.45,.94) .11s
+  &.loading
+    animation: fadeOut 1s
+  &.loaded
+    animation: fadeIn 1s
 
 .site-wrap
   +clearfix
@@ -59,7 +68,7 @@
   min-height: 600px
   position: relative
   z-index: 100
-  padding-top: 80px
+  padding-top: 0
   background: white
   > header
     padding: 30px 20px

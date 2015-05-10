@@ -126,6 +126,9 @@ YUI.add('squarespace-ajaxifier', function(Y) {
         this.wrapper.removeClass(this.constructor.CLASS_NAMES.ready);
         this.wrapper.addClass(this.constructor.CLASS_NAMES.loading);
 
+        $('.content-wrap').removeClass('loaded');
+
+
         // Do da ajax
         Y.Data.get({
           url: url,
@@ -139,11 +142,38 @@ YUI.add('squarespace-ajaxifier', function(Y) {
               // Swap out the dom
               dom = Y.DOM.create(response);
               content = Y.Selector.query(this.constructor.WRAPPERS, dom, true);
-              this.wrapper.empty(true).setContent(Y.one(content).get('children'));
+              //this.wrapper.empty(true).setContent(Y.one(content).get('children'));   
+              var wrap = this.wrapper;
+
+              $('.content-wrap').removeClass('loaded').addClass('loading');
               
+              var anim = new Y.Anim({
+                node: '.content-wrap',
+                duration: 0.5,
+                //to: { opacity: 0 }
+              });
+
+              var onEnd = function() {
+                wrap.empty(true).setContent(Y.one(content).get('children'));
+                $('.content-wrap').addClass('loaded');   
+              };
+
+              anim.on('end', onEnd);
+
+              anim.run();
+
+              //Y.one('.content-wrap .yui3-remove').on('click', anim.run, anim);
+
               // Switch body class
               bodyClass = response.match(new RegExp('<body.*class="([^"]*)"'));
-              Y.one('body').set('className', bodyClass[1]);
+              //Y.one('body').set('className', bodyClass[1]);
+              var htmlObject = document.createElement('html');
+              htmlObject.innerHTML = response;
+              var klass = htmlObject.querySelector("body").className;
+              document.querySelector('body').className = klass;
+
+              
+
 
               // Run site.js if exists (not sure how to make this work for all scripts)
               if (Y.one('script[src*="site.js"]')) {

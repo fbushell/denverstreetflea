@@ -5,8 +5,9 @@ import "lib/jquery.ba-throttle-debounce.min";
 import "lib/jquery.scrollmagic.min";
 import "lib/jquery.scrollmagic.debug";
 import "lib/jquery.ba-bbq-plugin.min";
-import "lib/jquery.bttrlazyloading.min";
+// import "lib/jquery.bttrlazyloading.min";
 import "lib/hammer.min";
+//import "bower_components/bigtext/dist/bigtext";
 
 
 var conductor = {
@@ -37,6 +38,7 @@ var conductor = {
     self.eventContentHeight();
     self.updateSceneDuration();
     self.eventWrap = $('.event-content');
+    self.navButton = $('.nav-button');
     // self.eventNav = $('.event-navigation');
     //self.eventOffset = ((self.eventWrap.height()) - (self.eventNav.height()));
 
@@ -45,6 +47,12 @@ var conductor = {
     self.eventNav = $('.event-navigation');
     self.eventMenuBindings();
    //  self.btt = $('.back-to-top');
+
+    self.navButton.on('click', function() {
+      self.body.toggleClass('menu-active');
+    });
+
+    
 
    // // Back to Top
    //  self.btt.on('click', function(){

@@ -11,6 +11,8 @@
 //
 // ..............................................
 
+@include font-face('OfficeCodePro', 'OfficeCodePro-Regular', 'OfficeCodePro', 'sans-serif')
+
 html 
   box-sizing: border-box
 *, *:before, *:after 
@@ -28,10 +30,17 @@ body
   font-weight: $baseFontWeight
   font-style: normal
   color: $textMain
-  background: $bodyBackground
+  background-color: $bodyBackground
   width: 100%
   height: 100%
   -webkit-font-smoothing: antialiased
+  transition: background-color .662s cubic-bezier(.25,.46,.45,.94)
+  &.about
+    background-color: $yellow
+  &.sell-at-the-flea
+    background-color: $green
+  &.blog
+    background-color: $blue
 
 a
   color: $linkColor

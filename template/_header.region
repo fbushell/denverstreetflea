@@ -5,11 +5,15 @@
     <meta name="viewport" content="initial-scale=1">
     {squarespace-headers}
   </head>
-  <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
+  <body id="{squarespace.page-id}" class="{collection.navigationTitle|slugify}">
 
-    <div class="page-loader">
+    <!-- <div class="page-loader">
       <div class="spinner"></div>
-    </div>
+    </div> -->
 
-    <div class="site-wrap">
-      <div class="container">
+    <header class="main-header">
+      <div class="inner-container">
+        <div class="logo"></div>  
+        <squarespace:navigation navigationId="mainNav" template="mainNav" />
+      </div>
+    </header>
