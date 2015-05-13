@@ -205,7 +205,7 @@ YUI.add('squarespace-ajaxifier', function(Y) {
       // SQS layout
       Squarespace.initializeLayoutBlocks(Y);
 
-      wrapper.all('img[data-image]').each(function(el) {
+      this.wrapper.all('img[data-image]').each(function(el) {
         if (!el.ancestor('.sqs-layout')) {
           ImageLoader.load(el);
         }
