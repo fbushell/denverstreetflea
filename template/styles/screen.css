@@ -1917,7 +1917,7 @@ table.bordered > thead > tr > td {
 /* line 56, ../../sass/elements/_layout.sass */
 .content {
   margin: 0;
-  padding: 70px 0;
+  padding: 0;
 }
 
 /* line 60, ../../sass/elements/_layout.sass */
