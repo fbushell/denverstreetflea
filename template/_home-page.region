@@ -1,8 +1,7 @@
 <div class="content-wrap clearfix" role="main">
-  <div class="inner-container">
-    <div class="content pasic-page-content clearfix"  data-content-field="main-content">
-	      {squarespace.main-content}
-	    </div>
+	<div class="inner-container">
+	  <div class="content pasic-page-content clearfix"  data-content-field="main-content">
+	     {squarespace.main-content}
 	  </div>
 	</div>
 </div>

@@ -119,79 +119,105 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @font-face {
   font-family: "OfficeCodePro";
-  src: url("fonts/OfficeCodePro/OfficeCodePro-Regular.eot");
-  src: url("fonts/OfficeCodePro/OfficeCodePro-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/OfficeCodePro/OfficeCodePro-Regular.woff") format("woff"), url("fonts/OfficeCodePro/OfficeCodePro-Regular.ttf") format("truetype"), url("fonts/OfficeCodePro/OfficeCodePro-Regular.svg#OfficeCodePro") format("svg");
+  src: url("//static1.squarespace.com/static/553ea0cee4b04d836f633668/t/554feda1e4b0a8858a7a4d48/1431301537544/OfficeCodePro-Regular.eot"), url("//static1.squarespace.com/static/553ea0cee4b04d836f633668/t/554feda9e4b0425f6a8a4a25/1431301545098/OfficeCodePro-Regular.ttf"), url("//static1.squarespace.com/static/553ea0cee4b04d836f633668/t/554fedb0e4b0425f6a8a4a32/1431301552687/OfficeCodePro-Regular.woff");
+  @font-face;
+  font-family: "OfficeCodeProBold";
+  src: url("//static1.squarespace.com/static/553ea0cee4b04d836f633668/t/55503049e4b02d0d024235e6/1431318601785/OfficeCodePro-Bold.eot"), url("//static1.squarespace.com/static/553ea0cee4b04d836f633668/t/555030a5e4b0b3586ba5f05e/1431318693511/OfficeCodePro-Bold.ttf"), url("//static1.squarespace.com/static/553ea0cee4b04d836f633668/t/555030bbe4b026a2b091f32f/1431318715149/OfficeCodePro-Bold.woff");
 }
-/* line 16, ../../sass/elements/_base.sass */
+/* line 22, ../../sass/elements/_base.sass */
 html {
   box-sizing: border-box;
 }
 
-/* line 18, ../../sass/elements/_base.sass */
+/* line 25, ../../sass/elements/_base.sass */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 22, ../../sass/elements/_base.sass */
+/* line 29, ../../sass/elements/_base.sass */
 html {
   height: 100%;
   width: 100%;
-  font-size: 16px;
+  font-size: 20px;
 }
 
-/* line 27, ../../sass/elements/_base.sass */
+/* line 34, ../../sass/elements/_base.sass */
+.logo {
+  transition: 0.662s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* line 37, ../../sass/elements/_base.sass */
 body {
   font-family: "OfficeCodePro", sans-serif;
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   color: #19191F;
-  background-color: #fff;
+  background-color: white;
   width: 100%;
   height: 100%;
   -webkit-font-smoothing: antialiased;
-  transition: background-color 0.662s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: background-color 0.662s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.662s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-/* line 38, ../../sass/elements/_base.sass */
+/* line 48, ../../sass/elements/_base.sass */
+body.home {
+  color: #19191F;
+  background-color: white;
+}
+/* line 51, ../../sass/elements/_base.sass */
+body.home a,
+body.home a:visited {
+  color: #19191F;
+}
+/* line 54, ../../sass/elements/_base.sass */
+body.home .logo {
+  fill: #19191F;
+}
+/* line 56, ../../sass/elements/_base.sass */
 body.about {
-  background-color: #FFD68B;
+  background-color: black;
+  color: white;
 }
-/* line 40, ../../sass/elements/_base.sass */
-body.sell-at-the-flea {
+/* line 59, ../../sass/elements/_base.sass */
+body.about .logo {
+  fill: white;
+}
+/* line 61, ../../sass/elements/_base.sass */
+body.sell {
   background-color: #8BB28F;
 }
-/* line 42, ../../sass/elements/_base.sass */
+/* line 63, ../../sass/elements/_base.sass */
 body.blog {
   background-color: #76B1DF;
 }
 
-/* line 45, ../../sass/elements/_base.sass */
+/* line 66, ../../sass/elements/_base.sass */
 a {
   color: #19191F;
   text-decoration: none;
   border-bottom: 1px solid;
   padding-bottom: 1px;
 }
-/* line 50, ../../sass/elements/_base.sass */
+/* line 71, ../../sass/elements/_base.sass */
 a:hover {
   color: #7C7C7C;
   text-decoration: none;
   cursor: pointer;
 }
-/* line 54, ../../sass/elements/_base.sass */
+/* line 75, ../../sass/elements/_base.sass */
 a:focus {
   outline: none;
 }
-/* line 56, ../../sass/elements/_base.sass */
+/* line 77, ../../sass/elements/_base.sass */
 a:visited {
   color: #19191F;
 }
-/* line 58, ../../sass/elements/_base.sass */
+/* line 79, ../../sass/elements/_base.sass */
 a img {
   border: none;
 }
 
-/* line 61, ../../sass/elements/_base.sass */
+/* line 82, ../../sass/elements/_base.sass */
 img {
   width: auto;
   height: auto;
@@ -202,27 +228,27 @@ img {
   transition: 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* line 74, ../../sass/elements/_base.sass */
+/* line 95, ../../sass/elements/_base.sass */
 .lazy {
   opacity: 1;
 }
 
-/* line 78, ../../sass/elements/_base.sass */
+/* line 99, ../../sass/elements/_base.sass */
 .not-loaded img {
   opacity: 0;
 }
 
-/* line 82, ../../sass/elements/_base.sass */
+/* line 103, ../../sass/elements/_base.sass */
 #map_canvas img, #map_canvas object, #map_canvas embed {
   max-width: none;
 }
 
-/* line 85, ../../sass/elements/_base.sass */
+/* line 106, ../../sass/elements/_base.sass */
 #googlemap img, object, embed {
   max-width: none;
 }
 
-/* line 88, ../../sass/elements/_base.sass */
+/* line 109, ../../sass/elements/_base.sass */
 *:focus {
   outline: none;
 }
@@ -245,13 +271,13 @@ small {
 /* line 16, ../../sass/elements/_type.sass */
 .monster {
   font-size: 150px;
-  font-family: "OfficeCodePro", sans-serif;
-  font-weight: 400;
+  font-family: "OfficeCodeProBold", sans-serif;
+  font-weight: normal;
 }
 
 /* line 21, ../../sass/elements/_type.sass */
 strong {
-  font-weight: 700;
+  font-weight: normal;
 }
 
 /* line 24, ../../sass/elements/_type.sass */
@@ -267,7 +293,7 @@ cite {
 /* line 30, ../../sass/elements/_type.sass */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
-  font-family: "OfficeCodePro", sans-serif;
+  font-family: "OfficeCodeProBold", sans-serif;
   text-rendering: optimizelegibility;
   font-style: normal;
 }
@@ -283,10 +309,10 @@ h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
 
 /* line 41, ../../sass/elements/_type.sass */
 h1 {
-  font-size: 7rem;
+  font-size: 4rem;
   line-height: 1.25;
   margin-bottom: 30px;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 /* line 47, ../../sass/elements/_type.sass */
@@ -294,35 +320,35 @@ h2 {
   font-size: 2rem;
   line-height: 1.4;
   margin-bottom: 30px !important;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 /* line 53, ../../sass/elements/_type.sass */
 h3 {
   font-size: 1.4rem;
   line-height: 1.13636;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 /* line 58, ../../sass/elements/_type.sass */
 h4 {
   font-size: 1.1rem;
   line-height: 1.11111;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 /* line 63, ../../sass/elements/_type.sass */
 h5 {
   font-size: 1rem;
   line-height: inherit;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 /* line 68, ../../sass/elements/_type.sass */
 h6 {
   font-size: 0.875rem;
   line-height: inherit;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 @media (max-width: 768px) {
@@ -378,7 +404,7 @@ dl {
 
 /* line 108, ../../sass/elements/_type.sass */
 dt {
-  font-weight: 700;
+  font-weight: normal;
 }
 
 /* line 111, ../../sass/elements/_type.sass */
@@ -443,7 +469,7 @@ input[type="submit"] {
   border: 0;
   height: 50px;
   line-height: 50px;
-  background: #FD999A;
+  background: #19191F;
   text-align: center;
   color: white;
   text-transform: uppercase;
@@ -504,8 +530,8 @@ input[type="submit"][disabled]:hover {
 button.hollow,
 [role="button"].hollow,
 input[type="submit"].hollow {
-  border: 2px solid #FD999A;
-  color: #FD999A;
+  border: 2px solid #19191F;
+  color: #19191F;
   background: none;
   background-color: transparent;
 }
@@ -513,7 +539,7 @@ input[type="submit"].hollow {
 button.hollow:hover,
 [role="button"].hollow:hover,
 input[type="submit"].hollow:hover {
-  background: #FD999A;
+  background: #19191F;
   color: white;
   text-decoration: none;
 }
@@ -646,8 +672,8 @@ legend {
 body label {
   display: inline-block;
   margin-bottom: 5px;
-  font-family: "OfficeCodePro", sans-serif;
-  font-weight: 400;
+  font-family: "OfficeCodeProBold", sans-serif;
+  font-weight: normal;
   font-size: 0.8em;
 }
 
@@ -731,7 +757,7 @@ div.select select {
   background-position: 97% center;
   font-family: "OfficeCodePro", sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: normal;
   color: #19191F;
   margin: 0;
   width: 100%;
@@ -756,7 +782,7 @@ div.select select:focus {
 select {
   font-family: "OfficeCodePro", sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: normal;
   background-image: url("/assets/images/icons/icon_files/select-arrow.svg");
   background-color: #F5F7FA;
   background-repeat: no-repeat;
@@ -817,7 +843,7 @@ input[type="color"] {
   height: 55px;
   font-family: "OfficeCodePro", sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: normal;
   color: #19191F;
   background-color: white;
   border: 0 solid white;
@@ -953,7 +979,7 @@ input[type="color"].sm {
 /* line 232, ../../sass/elements/_forms.sass */
 input::-webkit-input-placeholder {
   color: #272529;
-  font-weight: 400;
+  font-weight: normal;
   opacity: 1;
   -webkit-font-smoothing: antialiased;
 }
@@ -961,7 +987,7 @@ input::-webkit-input-placeholder {
 /* line 238, ../../sass/elements/_forms.sass */
 input:-moz-placehlder {
   color: #272529;
-  font-weight: 400;
+  font-weight: normal;
   opacity: 1;
   -webkit-font-smoothing: antialiased;
 }
@@ -969,7 +995,7 @@ input:-moz-placehlder {
 /* line 244, ../../sass/elements/_forms.sass */
 input::-moz-placehlder {
   color: #272529;
-  font-weight: 400;
+  font-weight: normal;
   opacity: 1;
   -webkit-font-smoothing: antialiased;
 }
@@ -977,7 +1003,7 @@ input::-moz-placehlder {
 /* line 250, ../../sass/elements/_forms.sass */
 input:-ms-input-placeholder {
   color: #272529;
-  font-weight: 400;
+  font-weight: normal;
   opacity: 1;
   -webkit-font-smoothing: antialiased;
 }
@@ -1025,12 +1051,12 @@ form .cancel:hover {
   color: #19191F;
 }
 
-/* line 25, ../../sass/_mixins.sass */
+/* line 9, ../../sass/_mixins.sass */
 .form-group:before, .form-group:after {
   content: " ";
   display: table;
 }
-/* line 29, ../../sass/_mixins.sass */
+/* line 13, ../../sass/_mixins.sass */
 .form-group:after {
   clear: both;
 }
@@ -1194,8 +1220,8 @@ label.toggle {
 }
 /* line 431, ../../sass/elements/_forms.sass */
 label.toggle input[type="checkbox"]:checked + div {
-  background-color: #FD999A;
-  border: 2px solid #FD999A;
+  background-color: #19191F;
+  border: 2px solid #19191F;
 }
 /* line 434, ../../sass/elements/_forms.sass */
 label.toggle input[type="checkbox"]:checked + div .toggle-circle {
@@ -1217,7 +1243,7 @@ label.toggle input[type="checkbox"] + div {
   width: 70px;
   position: relative;
   height: 30px;
-  background-color: #fff;
+  background-color: white;
   border: 0 solid #E4E9F2;
   border-radius: 15px;
   cursor: pointer;
@@ -1655,7 +1681,7 @@ table > tfoot > tr > td a:visited {
 table > thead > tr > th {
   vertical-align: bottom;
   border-bottom: 0;
-  font-weight: 700;
+  font-weight: normal;
   color: #E4E9F2;
 }
 /* line 42, ../../sass/elements/_tables.sass */
@@ -1839,21 +1865,21 @@ table.bordered > thead > tr > td {
           animation: fadeIn 1s;
 }
 
-/* line 32, ../../sass/elements/_layout.sass */
+/* line 37, ../../sass/elements/_layout.sass */
 .site-wrap {
   height: 100%;
 }
-/* line 25, ../../sass/_mixins.sass */
+/* line 9, ../../sass/_mixins.sass */
 .site-wrap:before, .site-wrap:after {
   content: " ";
   display: table;
 }
-/* line 29, ../../sass/_mixins.sass */
+/* line 13, ../../sass/_mixins.sass */
 .site-wrap:after {
   clear: both;
 }
 
-/* line 36, ../../sass/elements/_layout.sass */
+/* line 41, ../../sass/elements/_layout.sass */
 .inner-container {
   position: relative;
   width: 80%;
@@ -1862,24 +1888,24 @@ table.bordered > thead > tr > td {
   margin: 0 auto;
 }
 
-/* line 43, ../../sass/elements/_layout.sass */
+/* line 48, ../../sass/elements/_layout.sass */
 .content {
   margin: 0;
   padding: 70px 0;
 }
 
-/* line 47, ../../sass/elements/_layout.sass */
+/* line 52, ../../sass/elements/_layout.sass */
 .centered {
   max-width: 1300px;
   margin: 100px auto 50px;
   padding: 0 20px;
 }
-/* line 51, ../../sass/elements/_layout.sass */
+/* line 56, ../../sass/elements/_layout.sass */
 .centered .header-title {
   padding: 0 0 60px 0;
 }
 
-/* line 54, ../../sass/elements/_layout.sass */
+/* line 59, ../../sass/elements/_layout.sass */
 .basic-page {
   width: 95%;
   max-width: 1300px;
@@ -1887,17 +1913,17 @@ table.bordered > thead > tr > td {
   padding: 100px 0;
 }
 
-/* line 60, ../../sass/elements/_layout.sass */
+/* line 65, ../../sass/elements/_layout.sass */
 .padding-top {
   margin: 0 auto 50px;
 }
 
-/* line 63, ../../sass/elements/_layout.sass */
+/* line 68, ../../sass/elements/_layout.sass */
 .full-width {
   padding: 0;
 }
 
-/* line 66, ../../sass/elements/_layout.sass */
+/* line 71, ../../sass/elements/_layout.sass */
 .container {
   width: 100%;
   min-height: 600px;
@@ -1906,23 +1932,23 @@ table.bordered > thead > tr > td {
   padding-top: 0;
   background: white;
 }
-/* line 73, ../../sass/elements/_layout.sass */
+/* line 78, ../../sass/elements/_layout.sass */
 .container > header {
   padding: 30px 20px;
 }
-/* line 75, ../../sass/elements/_layout.sass */
+/* line 80, ../../sass/elements/_layout.sass */
 .container > header h1 {
   margin-bottom: 0;
 }
 
-/* line 78, ../../sass/elements/_layout.sass */
+/* line 83, ../../sass/elements/_layout.sass */
 .dots {
   text-align: center;
   font-size: 1.6em;
   line-height: 0.2em;
 }
 
-/* line 83, ../../sass/elements/_layout.sass */
+/* line 88, ../../sass/elements/_layout.sass */
 .back-to-top {
   visibility: hidden;
   opacity: 0;
@@ -1939,7 +1965,7 @@ table.bordered > thead > tr > td {
   cursor: pointer;
   transition: 300ms ease-in-out;
 }
-/* line 98, ../../sass/elements/_layout.sass */
+/* line 103, ../../sass/elements/_layout.sass */
 .back-to-top.visible {
   visibility: visible;
   opacity: 1;
@@ -1966,7 +1992,7 @@ table.bordered > thead > tr > td {
             transform: rotate(360deg);
   }
 }
-/* line 110, ../../sass/elements/_layout.sass */
+/* line 115, ../../sass/elements/_layout.sass */
 .page-loader {
   position: fixed;
   top: 0;
@@ -1978,7 +2004,7 @@ table.bordered > thead > tr > td {
   background: white;
 }
 
-/* line 120, ../../sass/elements/_layout.sass */
+/* line 125, ../../sass/elements/_layout.sass */
 .spinner {
   position: absolute;
   left: 50%;
@@ -2002,13 +2028,13 @@ table.bordered > thead > tr > td {
   transition: 500ms ease-out;
 }
 
-/* line 138, ../../sass/elements/_layout.sass */
+/* line 143, ../../sass/elements/_layout.sass */
 .page-loader.loaded .spinner {
   opacity: 0;
 }
 
 @media(max-width: 850px) {
-  /* line 145, ../../sass/elements/_layout.sass */
+  /* line 150, ../../sass/elements/_layout.sass */
   .back-to-top {
     right: 10px;
     bottom: 10px;
@@ -2044,7 +2070,7 @@ body:not(.button-style-default) .sqs-editable-button,
 body:not(.button-style-default) .sqs-editable-button-font,
 .sqs-editable-button {
   font-family: "OfficeCodePro", sans-serif !important;
-  font-weight: 400 !important;
+  font-weight: normal !important;
   letter-spacing: 0 !important;
   text-transform: capitalize !important;
   padding: 12px 40px !important;
@@ -2069,7 +2095,7 @@ body:not(.button-style-default) .sqs-editable-button-font,
 }
 /* line 50, ../../sass/elements/_squarespace.sass */
 .sqs-block-image .image-block-outer-wrapper.layout-caption-below p strong {
-  font-family: "OfficeCodePro", sans-serif;
+  font-family: "OfficeCodeProBold", sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
 }
@@ -2096,7 +2122,7 @@ body:not(.button-style-default) .sqs-editable-button-font,
 .sqs-block-image .image-block-outer-wrapper.layout-caption-overlay .image-caption-wrapper .image-caption p {
   color: #19191F !important;
   font-size: 1rem !important;
-  font-family: "OfficeCodePro", sans-serif;
+  font-family: "OfficeCodeProBold", sans-serif;
   display: table-cell !important;
   vertical-align: middle !important;
   text-align: center;
@@ -2182,7 +2208,7 @@ body:not(.button-style-default) .sqs-editable-button-font,
 .sqs-gallery-block-slideshow .meta .meta-description p,
 .sqs-gallery-block-slideshow .meta .meta-description p {
   font-size: 1.4rem;
-  font-family: "OfficeCodePro", sans-serif;
+  font-family: "OfficeCodeProBold", sans-serif;
   margin: 0;
 }
 /* line 149, ../../sass/elements/_squarespace.sass */
@@ -2222,7 +2248,7 @@ body:not(.button-style-default) .sqs-editable-button-font,
 /* line 192, ../../sass/elements/_squarespace.sass */
 .squarespace-social-buttons.button-style .ss-social-button-wrapper .ss-social-button {
   font: 1rem "OfficeCodePro", sans-serif !important;
-  font-weight: 400 !important;
+  font-weight: normal !important;
   color: #19191F !important;
   background: none !important;
 }
@@ -2427,20 +2453,34 @@ blockquote span {
   padding-right: 20px;
 }
 
-/* line 1, ../../sass/pages/_header.sass */
+/* line 2, ../../sass/pages/_header.sass */
+body.home .logo {
+  background-color: #FD999A;
+}
+/* line 4, ../../sass/pages/_header.sass */
+body.home a,
+body.home a:visited {
+  color: #FD999A !important;
+}
+
+/* line 9, ../../sass/pages/_header.sass */
 .logo {
   -webkit-mask: url("assets/text.svg") no-repeat;
           mask: url("assets/text.svg") no-repeat;
-  -webkit-mask-size: 200px 200px;
-          mask-size: 200px 200px;
-  height: 200px;
-  width: 200px;
-  background: black;
+  -webkit-mask-size: 130px 120px;
+          mask-size: 130px 120px;
+  height: 145px;
+  width: 130px;
+  background-color: #19191F;
   float: left;
   width: 50%;
+  -webkit-transform: rotate(-4deg);
+      -ms-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+  transition: background-color 0.662s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* line 10, ../../sass/pages/_header.sass */
+/* line 20, ../../sass/pages/_header.sass */
 .menu {
   width: 300px;
   height: 100%;
@@ -2461,7 +2501,7 @@ blockquote span {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 29, ../../sass/pages/_header.sass */
+/* line 39, ../../sass/pages/_header.sass */
 .menu > i {
   position: absolute;
   z-index: 91;
@@ -2476,7 +2516,7 @@ blockquote span {
   transition-property: -webkit-transform;
   transition-timing-function: cubic-bezier(0.6, 0, 0.2, 1);
 }
-/* line 41, ../../sass/pages/_header.sass */
+/* line 51, ../../sass/pages/_header.sass */
 .menu > i > span {
   display: block;
   width: 50px;
@@ -2487,7 +2527,7 @@ blockquote span {
   transition-duration: 0.4s;
   transition-timing-function: cubic-bezier(0.17, 0.89, 0.44, 1.52);
 }
-/* line 49, ../../sass/pages/_header.sass */
+/* line 59, ../../sass/pages/_header.sass */
 .menu > i > span > p {
   display: block;
   width: 30px;
@@ -2500,25 +2540,25 @@ blockquote span {
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.6, 0, 0.2, 1);
 }
-/* line 60, ../../sass/pages/_header.sass */
+/* line 70, ../../sass/pages/_header.sass */
 .menu > i > span > p:nth-child(1) {
   top: 10px;
   -webkit-transform: translate3d(0px, 0px, 0px) rotate(0deg);
           transform: translate3d(0px, 0px, 0px) rotate(0deg);
 }
-/* line 63, ../../sass/pages/_header.sass */
+/* line 73, ../../sass/pages/_header.sass */
 .menu > i > span > p:nth-child(2) {
   top: 19px;
   -webkit-transform: translate3d(0px, 0px, 0px) scaleX(1);
           transform: translate3d(0px, 0px, 0px) scaleX(1);
 }
-/* line 66, ../../sass/pages/_header.sass */
+/* line 76, ../../sass/pages/_header.sass */
 .menu > i > span > p:nth-child(3) {
   top: 28px;
   -webkit-transform: translate3d(0px, 0px, 0px) rotate(0deg);
           transform: translate3d(0px, 0px, 0px) rotate(0deg);
 }
-/* line 70, ../../sass/pages/_header.sass */
+/* line 80, ../../sass/pages/_header.sass */
 .menu ul {
   margin: 0;
   list-style: none;
@@ -2526,25 +2566,25 @@ blockquote span {
   line-height: 36px;
   margin: 131px 0 0 85px;
 }
-/* line 76, ../../sass/pages/_header.sass */
+/* line 86, ../../sass/pages/_header.sass */
 .menu ul li {
   transition-property: color;
   transition-duration: 0.3s;
 }
-/* line 79, ../../sass/pages/_header.sass */
+/* line 89, ../../sass/pages/_header.sass */
 .menu ul li:first-child {
   display: none;
 }
-/* line 82, ../../sass/pages/_header.sass */
+/* line 92, ../../sass/pages/_header.sass */
 .menu ul li.active-link a {
   color: #76B1DF;
   border-bottom: 1px solid;
 }
-/* line 85, ../../sass/pages/_header.sass */
+/* line 95, ../../sass/pages/_header.sass */
 .menu ul li.active-link a:hover {
   color: #76B1DF;
 }
-/* line 87, ../../sass/pages/_header.sass */
+/* line 97, ../../sass/pages/_header.sass */
 .menu ul li a,
 .menu ul li a:visited {
   color: rgba(255, 255, 255, 0.45);
@@ -2554,13 +2594,13 @@ blockquote span {
   border: none;
   -webkit-font-smoothing: antialiased;
 }
-/* line 95, ../../sass/pages/_header.sass */
+/* line 105, ../../sass/pages/_header.sass */
 .menu ul li a:hover,
 .menu ul li a:visited:hover {
   color: white;
 }
 
-/* line 99, ../../sass/pages/_header.sass */
+/* line 109, ../../sass/pages/_header.sass */
 .nav-button {
   position: absolute;
   z-index: 4210;
@@ -2575,74 +2615,85 @@ blockquote span {
   transition-timing-function: cubic-bezier(0.6, 0, 0.2, 1);
 }
 
-/* line 112, ../../sass/pages/_header.sass */
+/* line 122, ../../sass/pages/_header.sass */
 body.menu-active .menu {
   -webkit-transform: translate3d(0px, 0px, 0px);
   background-color: #272529;
 }
-/* line 115, ../../sass/pages/_header.sass */
+/* line 125, ../../sass/pages/_header.sass */
 body.menu-active .menu > i {
   webkit-transform: translate3d(191px, 40px, 0px);
 }
-/* line 118, ../../sass/pages/_header.sass */
+/* line 128, ../../sass/pages/_header.sass */
 body.menu-active .menu > i > span > p {
   background-color: #FFF;
 }
-/* line 120, ../../sass/pages/_header.sass */
+/* line 130, ../../sass/pages/_header.sass */
 body.menu-active .menu > i > span > p:nth-child(1) {
   -webkit-transform: translate3d(0px, 9px, 0px) rotate(-45deg);
           transform: translate3d(0px, 9px, 0px) rotate(-45deg);
 }
-/* line 122, ../../sass/pages/_header.sass */
+/* line 132, ../../sass/pages/_header.sass */
 body.menu-active .menu > i > span > p:nth-child(2) {
   -webkit-transform: translate3d(0px, 0px, 0px) scaleX(0);
           transform: translate3d(0px, 0px, 0px) scaleX(0);
 }
-/* line 124, ../../sass/pages/_header.sass */
+/* line 134, ../../sass/pages/_header.sass */
 body.menu-active .menu > i > span > p:nth-child(3) {
   -webkit-transform: translate3d(0px, -9px, 0px) rotate(45deg);
           transform: translate3d(0px, -9px, 0px) rotate(45deg);
 }
-/* line 126, ../../sass/pages/_header.sass */
+/* line 136, ../../sass/pages/_header.sass */
 body.menu-active .menu > i:hover > span {
   -webkit-transform: translate3d(0px, 0px, 0px) rotate(90deg);
           transform: translate3d(0px, 0px, 0px) rotate(90deg);
 }
-/* line 128, ../../sass/pages/_header.sass */
+/* line 138, ../../sass/pages/_header.sass */
 body.menu-active .nav-button {
   -webkit-transform: translate3d(191px, 40px, 0px);
           transform: translate3d(191px, 40px, 0px);
 }
 
-/* line 25, ../../sass/_mixins.sass */
+/* line 9, ../../sass/_mixins.sass */
 .main-header:before, .main-header:after {
   content: " ";
   display: table;
 }
-/* line 29, ../../sass/_mixins.sass */
+/* line 13, ../../sass/_mixins.sass */
 .main-header:after {
   clear: both;
 }
-/* line 133, ../../sass/pages/_header.sass */
+/* line 143, ../../sass/pages/_header.sass */
 .main-header .main-nav {
   float: right;
   width: 50%;
+  margin-top: 20px;
 }
-/* line 136, ../../sass/pages/_header.sass */
+/* line 147, ../../sass/pages/_header.sass */
 .main-header .main-nav ul {
   list-style: none;
 }
-/* line 138, ../../sass/pages/_header.sass */
+/* line 149, ../../sass/pages/_header.sass */
 .main-header .main-nav ul li {
   display: inline-block;
   width: 50%;
+  opacity: 0.4;
+  transition: 0.662s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-/* line 141, ../../sass/pages/_header.sass */
+/* line 154, ../../sass/pages/_header.sass */
 .main-header .main-nav ul li a {
   border: none;
 }
+/* line 156, ../../sass/pages/_header.sass */
+.main-header .main-nav ul li.active-link {
+  opacity: 1;
+}
+/* line 158, ../../sass/pages/_header.sass */
+.main-header .main-nav ul li.active-link a {
+  border-bottom: 1px solid;
+}
 
-/* line 145, ../../sass/pages/_header.sass */
+/* line 162, ../../sass/pages/_header.sass */
 .page-header {
   height: 90vh;
   width: 100%;
@@ -2650,15 +2701,15 @@ body.menu-active .nav-button {
   background: linear-gradient(to bottom, #2e00ff 0%, #02ffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e00ff', endColorstr='#02ffff',GradientType=0 );
 }
-/* line 158, ../../sass/pages/_header.sass */
+/* line 175, ../../sass/pages/_header.sass */
 .page-header .huge {
   width: 60%;
   margin: 0 auto;
   display: block;
 }
-/* line 162, ../../sass/pages/_header.sass */
+/* line 179, ../../sass/pages/_header.sass */
 .page-header .huge > span {
-  font-family: "OfficeCodePro", sans-serif;
+  font-family: "OfficeCodeProBold", sans-serif;
 }
 
 /* line 1, ../../sass/pages/_event.sass */
@@ -2723,7 +2774,7 @@ body.menu-active .nav-button {
 /* line 45, ../../sass/pages/_event.sass */
 .event-banner .desc-wrapper p {
   font-size: 1.4rem;
-  font-family: "OfficeCodePro", sans-serif;
+  font-family: "OfficeCodeProBold", sans-serif;
   margin: 0;
 }
 /* line 49, ../../sass/pages/_event.sass */
@@ -3017,7 +3068,7 @@ body.menu-active .nav-button {
 .main-footer .footer-nav-wrap ul li {
   display: inline;
   margin-left: 40px;
-  font-family: "OfficeCodePro", sans-serif;
+  font-family: "OfficeCodeProBold", sans-serif;
   font-size: 1.5rem;
 }
 /* line 32, ../../sass/pages/_footer.sass */

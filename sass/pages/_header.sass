@@ -1,11 +1,21 @@
+body.home
+  .logo
+    background-color: $pink
+  a, 
+  a:visited
+    color: $pink !important
+
+
 .logo
   mask: url('assets/text.svg') no-repeat
-  mask-size: 200px 200px
-  height: 200px
-  width: 200px
-  background: black
+  mask-size: 130px 120px
+  height: 145px
+  width: 130px
+  background-color: $black
   float: left
   width: 50%
+  transform: rotate(-4deg)
+  transition: background-color .662s cubic-bezier(.25,.46,.45,.94)
 
 .menu
   width: 300px
@@ -133,13 +143,20 @@ body.menu-active
   .main-nav
     float: right
     width: 50%
+    margin-top: 20px
     ul
       list-style: none
       li
         display: inline-block
         width: 50%
+        opacity: 0.4
+        transition: .662s cubic-bezier(.25,.46,.45,.94)
         a
           border: none
+        &.active-link
+          opacity: 1
+          a
+            border-bottom: 1px solid
 
 
 .page-header
