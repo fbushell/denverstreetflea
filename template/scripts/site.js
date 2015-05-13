@@ -225,7 +225,7 @@ YUI.add('squarespace-ajaxifier', function(Y) {
       });
 
       // Execute scripts within
-      wrapper.all( 'script' ).each(function( n ) {
+      this.wrapper.all( 'script' ).each(function( n ) {
         var newScript = document.createElement('script');
         newScript.type = 'text/javascript';
         if (n.getAttribute('src')) {
