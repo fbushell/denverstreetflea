@@ -1,6 +1,6 @@
     </div>
     <squarespace:script src="vendor.js" combo="false" />
-    <squarespace:script src="site.js" combo="true" />
+    <squarespace:script src="site.js" combo="false" />
     <script>
         Y.use('squarespace-ajaxifier', function() { 
             new Y.Squarespace.Ajaxifier(); 
