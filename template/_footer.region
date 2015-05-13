@@ -2,8 +2,16 @@
     <squarespace:script src="vendor.js" combo="false" />
     <squarespace:script src="site.js" combo="false" />
     <script>
-        Y.use('squarespace-ajaxifier', function() { 
-            new Y.Squarespace.Ajaxifier(); 
+        Y.use([
+          'node',
+          'event',
+          'squarespace-ajaxifier'
+        ], function(Y) {
+
+          new Y.Squarespace.Ajaxifier({
+            scrollToTop: false
+          });
+
         });
     </script>
 

@@ -18,7 +18,7 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
     */
 
     function loadImages () {
-      Y.all('img[data-src]' ).each(function(img) {
+      Y.all('img[data-src]').each(function(img) {
         ImageLoader.load(img);
       });
     }
@@ -142,25 +142,26 @@ YUI.add('squarespace-ajaxifier', function(Y) {
               // Swap out the dom
               dom = Y.DOM.create(response);
               content = Y.Selector.query(this.constructor.WRAPPERS, dom, true);
-              //this.wrapper.empty(true).setContent(Y.one(content).get('children'));   
-              var wrap = this.wrapper;
 
-              $('.content-wrap').removeClass('loaded').addClass('loading');
+              this.wrapper.empty(true).setContent(Y.one(content).get('children'));   
+              // var wrap = this.wrapper;
+
+              // $('.content-wrap').removeClass('loaded').addClass('loading');
               
-              var anim = new Y.Anim({
-                node: '.content-wrap',
-                duration: 0.5
-                //to: { opacity: 0 }
-              });
+              // var anim = new Y.Anim({
+              //   node: '.content-wrap',
+              //   duration: 0.5
+              //   //to: { opacity: 0 }
+              // });
 
-              var onEnd = function() {
-                wrap.empty(true).setContent(Y.one(content).get('children'));
-                $('.content-wrap').addClass('loaded');   
-              };
+              // var onEnd = function() {
+              //   wrap.empty(true).setContent(Y.one(content).get('children'));
+              //   $('.content-wrap').addClass('loaded');   
+              // };
 
-              anim.on('end', onEnd);
+              // anim.on('end', onEnd);
 
-              anim.run();
+              // anim.run();
 
               //Y.one('.content-wrap .yui3-remove').on('click', anim.run, anim);
 
