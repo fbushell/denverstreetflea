@@ -1,8 +1,19 @@
-
     </div>
-
-    <squarespace:script src="site.js" combo="true" />
-    {squarespace-footers}
     
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/plugins/ScrollToPlugin.min.js"></script>
+    <squarespace:script src="site.js" combo="true" />
+    <squarespace:script src="app.js" combo="true" />
+    <!-- <squarespace:script src="paper.js" combo="false" /> -->
+    <squarespace:script src="conductor.js" combo="false" />
+    <script>
+        Y.use('squarespace-ajaxifier', function() { 
+            new Y.Squarespace.Ajaxifier(); 
+        });
+    </script>
+
+    <squarespace:script src="vendor.js" combo="false" />
+
+    {squarespace-footers}
   </body>
 </html> 

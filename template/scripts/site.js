@@ -149,7 +149,7 @@ YUI.add('squarespace-ajaxifier', function(Y) {
               
               var anim = new Y.Anim({
                 node: '.content-wrap',
-                duration: 0.5,
+                duration: 0.5
                 //to: { opacity: 0 }
               });
 
