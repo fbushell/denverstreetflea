@@ -134,15 +134,18 @@ body.menu-active
   +clearfix
   .main-nav
     float: right
-    width: 50%
-    margin-top: 20px
+    width: 45%
+    margin-top: 25px
     ul
       list-style: none
       li
-        display: inline-block
+        float: left
         width: 50%
         opacity: 0.4
+        margin-bottom: 10px
         transition: .662s cubic-bezier(.25,.46,.45,.94)
+        &:first-child
+          display: none
         a
           border: none
         &.active-link
