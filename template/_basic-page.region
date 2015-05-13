@@ -1,12 +1,14 @@
-<div class="content-wrap clearfix" role="main">
-	<div class="inner-container">
-		<div class="masthead">
-				{.section collection}
-				  <h1 class="">{title}</h1>
-				{.end}
+<div class="hot-dog">
+	<div class="content-wrap clearfix" role="main">
+		<div class="inner-container">
+			<div class="masthead">
+					{.section collection}
+					  <h1 class="">{title}</h1>
+					{.end}
+			</div>
+		  <div class="content pasic-page-content clearfix"  data-content-field="main-content">
+		     {squarespace.main-content}
+		  </div>
 		</div>
-	  <div class="content pasic-page-content clearfix"  data-content-field="main-content">
-	     {squarespace.main-content}
-	  </div>
 	</div>
 </div>

@@ -47,19 +47,28 @@ body
   transition: background-color .662s cubic-bezier(.25,.46,.45,.94), color .662s cubic-bezier(.25,.46,.45,.94)
   &.home
     color: $black
+    background-color: #FF8D6C
+    a,
+    a:visited,
+      color: $black
+    .logo
+      background-color: $black
+  &.about
+    background-color: black
+    color: white
+    a,
+    a:visited,
+      color: white
+    .logo
+      background-color: white
+  &.sell
+    color: $black
     background-color: white
     a,
     a:visited,
       color: $black
     .logo
-      fill: $black
-  &.about
-    background-color: black
-    color: white
-    .logo
-      fill: white
-  &.sell
-    background-color: $green
+      background-color: $black
   &.blog
     background-color: $blue
 
