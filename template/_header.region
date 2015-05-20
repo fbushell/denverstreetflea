@@ -21,3 +21,14 @@
           <squarespace:navigation navigationId="mainNav" template="mainNav" />
         </div>
       </header>
+
+      <sidebar class="menu">
+        <i class="nav-button">
+          <span>
+            <p></p>
+            <p></p>
+            <p></p>
+          </span>
+        </i>
+        <squarespace:navigation navigationId="mainNav" template="mainNav" />
+      </sidebar>

@@ -9,17 +9,22 @@
   transform: rotate(-4deg)
   transition: background-color .662s cubic-bezier(.25,.46,.45,.94)
 
+body.about
+  .menu i > span > p
+    background-color: white
+
 .menu
+  display: none
   width: 300px
   height: 100%
   position: fixed
-  z-index: $z-modal
-  background-color: $grayLight
+  z-index: $z-3
+  background-color: $grayDark
   right: 0
   left: auto
   top: 0
   transition-duration: .6s
-  transform: translate3d(220px,0px,0px)
+  transform: translate3d(301px,0px,0px)
   transition-property: -webkit-transform, background-color
   transition-timing-function: cubic-bezier(0.6,0,0.2,1)
   -webkit-user-select: none
@@ -36,7 +41,7 @@
     width: 50px
     height: 40px
     cursor: pointer
-    transform: translate3d(15px,40px,0px)
+    transform: translate3d(-80px,40px,0px)
     transition-duration: .6s
     transition-property: -webkit-transform
     transition-timing-function: cubic-bezier(0.6,0,0.2,1)
@@ -74,18 +79,16 @@
     list-style: none
     color: rgba(255, 255, 255, 0.45)
     line-height: 36px
-    margin: 131px 0 0 85px
+    margin: 110px 0 0 85px
     li
       transition-property: color
       transition-duration: .3s
-      &:first-child
-        display: none
       &.active-link
         a
-          color: $blue
+          color: white
           border-bottom: 1px solid
           &:hover
-            color: $blue
+            color: white
       a,
       a:visited
         color: rgba(255, 255, 255, 0.45)
@@ -96,6 +99,19 @@
         -webkit-font-smoothing: antialiased
         &:hover
           color: white
+
+.sidebar-logo
+  position: absolute
+  bottom: 15px
+  left: 50%
+  transform: translateX(-50%)
+  opacity: 0.4
+  svg
+    width: 90px
+    height: 100%
+    > *
+      fill: white
+
 
 
 .nav-button
@@ -110,39 +126,38 @@
   transition-property: -webkit-transform
   transition-timing-function: cubic-bezier(0.6,0,0.2,1)
 
-body.menu-active 
-  .menu
-    -webkit-transform: translate3d(0px,0px,0px)
-    background-color: $grayDark
-    > i 
-      webkit-transform: translate3d(191px,40px,0px)
-      > span 
-        > p
-          background-color: #FFF
-        > p:nth-child(1)
-          transform: translate3d(0px,9px,0px) rotate(-45deg)
-        > p:nth-child(2)
-          transform: translate3d(0px,0px,0px) scaleX(0)
-        > p:nth-child(3)
-          transform: translate3d(0px,-9px,0px) rotate(45deg)
-      &:hover > span
-        transform: translate3d(0px,0px,0px) rotate(90deg)
+.menu.menu-active 
+  -webkit-transform: translate3d(0px,0px,0px)
+  background-color: $grayDark
+  > i 
+    webkit-transform: translate3d(191px,40px,0px)
+    > span 
+      > p
+        background-color: #FFF
+      > p:nth-child(1)
+        transform: translate3d(0px,9px,0px) rotate(-45deg)
+      > p:nth-child(2)
+        transform: translate3d(0px,0px,0px) scaleX(0)
+      > p:nth-child(3)
+        transform: translate3d(0px,-9px,0px) rotate(45deg)
+    &:hover > span
+      transform: translate3d(0px,0px,0px) rotate(90deg)
   .nav-button
     transform: translate3d(191px,40px,0px)
 
 .main-header
   +clearfix
   .main-nav
+    display: block
     float: right
     width: 45%
     margin-top: 25px
     ul
       list-style: none
       li
-        float: left
-        width: 50%
+        display: inline-block
         opacity: 0.4
-        margin-bottom: 10px
+        margin: 0 0 10px 20px
         transition: .662s cubic-bezier(.25,.46,.45,.94)
         // &:first-child
         //   display: none
@@ -173,3 +188,9 @@ body.menu-active
     display: block
     > span
       font-family: $headingsFontFamily
+
+@media (max-width: 900px)
+  .menu
+    display: block
+  .main-header .main-nav
+    display: none
