@@ -2829,10 +2829,12 @@ body.about .menu i > span > p {
 
   /* line 199, ../../sass/pages/_header.sass */
   .logo {
-    width: 100%;
+    width: 80%;
+    -webkit-mask-size: 220px 200px;
+            mask-size: 220px 200px;
   }
 
-  /* line 201, ../../sass/pages/_header.sass */
+  /* line 202, ../../sass/pages/_header.sass */
   h1 {
     font-size: 7vh;
     margin-bottom: 0;
