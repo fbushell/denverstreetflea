@@ -2089,68 +2089,63 @@ table.bordered > thead > tr > td {
     bottom: 10px;
   }
 }
-/* line 2, ../../sass/elements/_squarespace.sass */
-.custom-cart {
-  position: fixed;
-  top: 10px;
-  opacity: 1;
+/* line 23, ../../sass/elements/_squarespace.sass */
+.absolute-cart-box {
+  bottom: 20px;
+  top: auto;
 }
-/* line 6, ../../sass/elements/_squarespace.sass */
-.custom-cart .font-smoothing {
-  color: black;
-  visibility: visible;
+/* line 26, ../../sass/elements/_squarespace.sass */
+.absolute-cart-box .icon,
+.absolute-cart-box .subtotal {
+  display: none;
 }
-/* line 9, ../../sass/elements/_squarespace.sass */
-.custom-cart .nav-font {
-  font-size: 13px;
-  letter-spacing: 1px;
-  z-index: 1101;
-}
-/* line 13, ../../sass/elements/_squarespace.sass */
-.custom-cart .sqs-cart-quantity {
-  display: inline;
-}
-/* line 15, ../../sass/elements/_squarespace.sass */
-.custom-cart a,
-.custom-cart a:visited {
-  display: block;
-  color: black;
-  padding: 12px;
+/* line 29, ../../sass/elements/_squarespace.sass */
+.absolute-cart-box .sqs-pill-shopping-cart-content {
+  min-width: 0;
+  border-radius: 0;
+  height: 49px;
+  cursor: pointer;
   white-space: nowrap;
-  line-height: 1em;
+  line-height: 41px;
+  font-size: 1rem;
+  padding: 10px 25px;
+  background-image: none;
+  border-radius: 0;
+  background: white;
+  font-size: 1rem;
 }
 
-/* line 23, ../../sass/elements/_squarespace.sass */
+/* line 44, ../../sass/elements/_squarespace.sass */
 .sqs-add-to-cart-button-wrapper {
   visibility: visible !important;
 }
 
-/* line 27, ../../sass/elements/_squarespace.sass */
+/* line 48, ../../sass/elements/_squarespace.sass */
 .sqs-layout > .sqs-row {
   margin-left: -10px;
   margin-right: -10px;
 }
 
-/* line 32, ../../sass/elements/_squarespace.sass */
+/* line 53, ../../sass/elements/_squarespace.sass */
 [class*=sqs-col] .sqs-block {
   padding-left: 10px !important;
   padding-right: 10px !important;
   padding-bottom: 10px !important;
   padding-top: 10px !important;
 }
-/* line 38, ../../sass/elements/_squarespace.sass */
+/* line 59, ../../sass/elements/_squarespace.sass */
 [class*=sqs-col] .sqs-block:not(.float):first-child {
   padding-top: 10px !important;
 }
 
-/* line 43, ../../sass/elements/_squarespace.sass */
+/* line 64, ../../sass/elements/_squarespace.sass */
 .sqs-block-button .sqs-block-button-element--medium {
   font-weight: 300 !important;
   font-size: 1rem !important;
   letter-spacing: 0.08em !important;
 }
 
-/* line 48, ../../sass/elements/_squarespace.sass */
+/* line 69, ../../sass/elements/_squarespace.sass */
 body:not(.button-style-default) .sqs-editable-button,
 body:not(.button-style-default) .sqs-editable-button-font,
 .sqs-editable-button {
@@ -2163,7 +2158,7 @@ body:not(.button-style-default) .sqs-editable-button-font,
   font-size: 1rem;
 }
 
-/* line 64, ../../sass/elements/_squarespace.sass */
+/* line 85, ../../sass/elements/_squarespace.sass */
 .sqs-block-image .image-block-outer-wrapper.layout-caption-below .image-caption-wrapper {
   padding: 20px 20px 40px 20px;
   position: relative;
@@ -2172,20 +2167,20 @@ body:not(.button-style-default) .sqs-editable-button-font,
   left: 20%;
   background: white;
 }
-/* line 71, ../../sass/elements/_squarespace.sass */
+/* line 92, ../../sass/elements/_squarespace.sass */
 .sqs-block-image .image-block-outer-wrapper.layout-caption-below p {
   font-size: 1rem;
   display: block;
   margin: 0;
   text-align: center;
 }
-/* line 76, ../../sass/elements/_squarespace.sass */
+/* line 97, ../../sass/elements/_squarespace.sass */
 .sqs-block-image .image-block-outer-wrapper.layout-caption-below p strong {
   font-family: "OfficeCodePro", sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
 }
-/* line 82, ../../sass/elements/_squarespace.sass */
+/* line 103, ../../sass/elements/_squarespace.sass */
 .sqs-block-image .image-block-outer-wrapper.layout-caption-overlay .image-caption-wrapper {
   top: 0px !important;
   bottom: 0px !important;
@@ -2196,7 +2191,7 @@ body:not(.button-style-default) .sqs-editable-button-font,
   cursor: pointer;
   transition: 300ms ease-out !important;
 }
-/* line 91, ../../sass/elements/_squarespace.sass */
+/* line 112, ../../sass/elements/_squarespace.sass */
 .sqs-block-image .image-block-outer-wrapper.layout-caption-overlay .image-caption-wrapper .image-caption {
   transition: none !important;
   display: table !important;
@@ -2204,7 +2199,7 @@ body:not(.button-style-default) .sqs-editable-button-font,
   width: 100% !important;
   background: white;
 }
-/* line 97, ../../sass/elements/_squarespace.sass */
+/* line 118, ../../sass/elements/_squarespace.sass */
 .sqs-block-image .image-block-outer-wrapper.layout-caption-overlay .image-caption-wrapper .image-caption p {
   color: #19191F !important;
   font-size: 1rem !important;
@@ -2214,17 +2209,17 @@ body:not(.button-style-default) .sqs-editable-button-font,
   text-align: center;
   padding: 0 30px;
 }
-/* line 106, ../../sass/elements/_squarespace.sass */
+/* line 127, ../../sass/elements/_squarespace.sass */
 .sqs-block-image .image-block-outer-wrapper .image-block-outer-wrapper.layout-caption-overlay-hover .image-caption {
   margin-bottom: 0 !important;
 }
 
-/* line 110, ../../sass/elements/_squarespace.sass */
+/* line 131, ../../sass/elements/_squarespace.sass */
 .sqs-frontend-node-header-widget-content {
   height: 44px;
 }
 
-/* line 115, ../../sass/elements/_squarespace.sass */
+/* line 136, ../../sass/elements/_squarespace.sass */
 .sqs-video-icon {
   background-color: white;
   background-image: none !important;
@@ -2236,7 +2231,7 @@ body:not(.button-style-default) .sqs-editable-button-font,
   border-radius: 50%;
   transition: 300ms ease-out;
 }
-/* line 125, ../../sass/elements/_squarespace.sass */
+/* line 146, ../../sass/elements/_squarespace.sass */
 .sqs-video-icon:before {
   content: "Play Video";
   position: absolute;
@@ -2250,19 +2245,19 @@ body:not(.button-style-default) .sqs-editable-button-font,
   font-weight: 600;
 }
 
-/* line 137, ../../sass/elements/_squarespace.sass */
+/* line 158, ../../sass/elements/_squarespace.sass */
 .sqs-block-html {
   width: 100% !important;
   max-width: 100% !important;
   margin: 0 !important;
 }
 
-/* line 143, ../../sass/elements/_squarespace.sass */
+/* line 164, ../../sass/elements/_squarespace.sass */
 .sqs-gallery-block-grid .slide .margin-wrapper .image-slide-title {
   display: block;
 }
 
-/* line 147, ../../sass/elements/_squarespace.sass */
+/* line 168, ../../sass/elements/_squarespace.sass */
 .sqs-gallery-block-slideshow .slide.loaded .meta {
   position: absolute;
   top: 0;
@@ -2276,7 +2271,7 @@ body:not(.button-style-default) .sqs-editable-button-font,
   max-width: 100% !important;
 }
 
-/* line 159, ../../sass/elements/_squarespace.sass */
+/* line 180, ../../sass/elements/_squarespace.sass */
 .sqs-gallery-block-slideshow .meta-inside {
   position: absolute;
   margin: 0 !important;
@@ -2290,21 +2285,21 @@ body:not(.button-style-default) .sqs-editable-button-font,
           transform: translateY(-50%);
 }
 
-/* line 171, ../../sass/elements/_squarespace.sass */
+/* line 192, ../../sass/elements/_squarespace.sass */
 .sqs-gallery-block-slideshow .meta .meta-description p,
 .sqs-gallery-block-slideshow .meta .meta-description p {
   font-size: 1.4rem;
   font-family: "OfficeCodePro", sans-serif;
   margin: 0;
 }
-/* line 175, ../../sass/elements/_squarespace.sass */
+/* line 196, ../../sass/elements/_squarespace.sass */
 .sqs-gallery-block-slideshow .meta .meta-description strong,
 .sqs-gallery-block-slideshow .meta .meta-description strong {
   font-size: 7rem;
   margin-bottom: 30px;
   line-height: 1;
 }
-/* line 179, ../../sass/elements/_squarespace.sass */
+/* line 200, ../../sass/elements/_squarespace.sass */
 .sqs-gallery-block-slideshow .meta .meta-description a,
 .sqs-gallery-block-slideshow .meta .meta-description a {
   display: inline-block;
@@ -2318,20 +2313,20 @@ body:not(.button-style-default) .sqs-editable-button-font,
   transition: 300ms cubic-bezier(0.36, 0.28, 0.25, 0.9);
   text-decoration: none;
 }
-/* line 190, ../../sass/elements/_squarespace.sass */
+/* line 211, ../../sass/elements/_squarespace.sass */
 .sqs-gallery-block-slideshow .meta .meta-description a:hover,
 .sqs-gallery-block-slideshow .meta .meta-description a:hover {
   background: rgba(255, 255, 255, 0.9);
 }
 
-/* line 213, ../../sass/elements/_squarespace.sass */
+/* line 234, ../../sass/elements/_squarespace.sass */
 .squarespace-social-buttons.button-style .ss-social-button-wrapper {
   background: white !important;
   box-shadow: none !important;
   padding: 0 !important;
 }
 
-/* line 218, ../../sass/elements/_squarespace.sass */
+/* line 239, ../../sass/elements/_squarespace.sass */
 .squarespace-social-buttons.button-style .ss-social-button-wrapper .ss-social-button {
   font: 1rem "OfficeCodePro", sans-serif !important;
   font-weight: normal !important;
@@ -2339,13 +2334,13 @@ body:not(.button-style-default) .sqs-editable-button-font,
   background: none !important;
 }
 
-/* line 224, ../../sass/elements/_squarespace.sass */
+/* line 245, ../../sass/elements/_squarespace.sass */
 .squarespace-social-buttons .ss-social-list-wrapper {
   position: relative !important;
   height: 0 !important;
 }
 
-/* line 228, ../../sass/elements/_squarespace.sass */
+/* line 249, ../../sass/elements/_squarespace.sass */
 .squarespace-social-buttons .ss-social-list-wrapper .ss-social-button-list {
   padding: 10px !important;
   border-radius: 0 !important;
@@ -2361,18 +2356,18 @@ body:not(.button-style-default) .sqs-editable-button-font,
           filter: grayscale(100%);
 }
 
-/* line 239, ../../sass/elements/_squarespace.sass */
+/* line 260, ../../sass/elements/_squarespace.sass */
 .squarespace-social-buttons .ss-social-list-wrapper .ss-social-button-list .ss-social-button-container {
   margin-bottom: 5px !important;
 }
 
-/* line 244, ../../sass/elements/_squarespace.sass */
+/* line 265, ../../sass/elements/_squarespace.sass */
 .sqs-search-page {
   padding-top: 20px;
   padding-bottom: 30px;
 }
 
-/* line 248, ../../sass/elements/_squarespace.sass */
+/* line 269, ../../sass/elements/_squarespace.sass */
 .sqs-search-page-input {
   padding: 5px 5px 5px 45px;
   background-size: 17px;
@@ -2380,89 +2375,89 @@ body:not(.button-style-default) .sqs-editable-button-font,
   max-width: 800px;
   margin: 0 auto 40px !important;
 }
-/* line 254, ../../sass/elements/_squarespace.sass */
+/* line 275, ../../sass/elements/_squarespace.sass */
 .sqs-search-page-input form {
   margin: 0 !important;
 }
-/* line 256, ../../sass/elements/_squarespace.sass */
+/* line 277, ../../sass/elements/_squarespace.sass */
 .sqs-search-page-input input {
   font-size: 1.2rem !important;
   margin: 0 !important;
 }
 
-/* line 260, ../../sass/elements/_squarespace.sass */
+/* line 281, ../../sass/elements/_squarespace.sass */
 .sqs-search-page-result {
   max-width: 800px;
   padding: 0 10px;
   margin: 0 auto;
 }
 
-/* line 265, ../../sass/elements/_squarespace.sass */
+/* line 286, ../../sass/elements/_squarespace.sass */
 .sqs-search-page-input {
   border-width: 0 0 1px 0 !important;
 }
 
-/* line 268, ../../sass/elements/_squarespace.sass */
+/* line 289, ../../sass/elements/_squarespace.sass */
 .sqs-search-page-item .sqs-main-image-container {
   width: 0% !important;
 }
 
-/* line 271, ../../sass/elements/_squarespace.sass */
+/* line 292, ../../sass/elements/_squarespace.sass */
 .sqs-search-page-item .sqs-main-content {
   float: none;
   width: 100%;
 }
 
-/* line 275, ../../sass/elements/_squarespace.sass */
+/* line 296, ../../sass/elements/_squarespace.sass */
 .sqs-search-container-list .search-results {
   border: none !important;
 }
 
-/* line 278, ../../sass/elements/_squarespace.sass */
+/* line 299, ../../sass/elements/_squarespace.sass */
 .sqs-search-container-item {
   border: none !important;
   opacity: 0.3;
 }
-/* line 281, ../../sass/elements/_squarespace.sass */
+/* line 302, ../../sass/elements/_squarespace.sass */
 .sqs-search-container-item:hover {
   opacity: 1;
 }
 
-/* line 284, ../../sass/elements/_squarespace.sass */
+/* line 305, ../../sass/elements/_squarespace.sass */
 .sqs-search-container .search-notice {
   max-width: 800px;
   margin: 0 auto;
   font-weight: 1rem !important;
 }
 
-/* line 290, ../../sass/elements/_squarespace.sass */
+/* line 311, ../../sass/elements/_squarespace.sass */
 blockquote span:first-of-type {
   margin-left: -14px !important;
 }
 
-/* line 293, ../../sass/elements/_squarespace.sass */
+/* line 314, ../../sass/elements/_squarespace.sass */
 blockquote span {
   font-size: inherit !important;
 }
 
-/* line 298, ../../sass/elements/_squarespace.sass */
+/* line 319, ../../sass/elements/_squarespace.sass */
 .sqs-block-horizontalrule hr {
   color: #19191F;
   background-color: #19191F;
 }
 
 @media (max-width: 568px) {
-  /* line 304, ../../sass/elements/_squarespace.sass */
+  /* line 325, ../../sass/elements/_squarespace.sass */
   [class*=sqs-col] {
     width: 100% !important;
     float: none !important;
   }
 
-  /* line 308, ../../sass/elements/_squarespace.sass */
+  /* line 329, ../../sass/elements/_squarespace.sass */
   .sqs-gallery-block-grid .sqs-gallery-design-grid-slide {
     width: 33% !important;
   }
-  /* line 310, ../../sass/elements/_squarespace.sass */
+  /* line 331, ../../sass/elements/_squarespace.sass */
   .sqs-gallery-block-grid .sqs-gallery-design-grid-slide img {
     width: 100% !important;
     height: auto !important;
