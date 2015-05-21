@@ -1108,30 +1108,23 @@ form .cancel:hover {
   margin-left: 0;
 }
 
-/* line 325, ../../sass/elements/_forms.sass */
-input[type="checkbox"],
-input[type="radio"] {
-  visibility: hidden;
-  display: none;
-}
-
-/* line 331, ../../sass/elements/_forms.sass */
+/* line 328, ../../sass/elements/_forms.sass */
 input[type="checkbox"]:disabled + label {
   cursor: not-allowed;
   color: #F5F7FA;
 }
-/* line 334, ../../sass/elements/_forms.sass */
+/* line 331, ../../sass/elements/_forms.sass */
 input[type="checkbox"]:disabled + label:before {
   background-color: #F5F7FA;
   color: #b1c1d8 !important;
   border: 0 solid #b1c1d8 !important;
 }
-/* line 338, ../../sass/elements/_forms.sass */
+/* line 335, ../../sass/elements/_forms.sass */
 input[type="checkbox"].inline + label {
   display: inline-block;
   margin: 0px 20px 10px 0;
 }
-/* line 341, ../../sass/elements/_forms.sass */
+/* line 338, ../../sass/elements/_forms.sass */
 input[type="checkbox"] + label {
   display: block;
   width: auto;
@@ -1144,7 +1137,7 @@ input[type="checkbox"] + label {
   line-height: 1.4;
   font-size: 1rem;
 }
-/* line 352, ../../sass/elements/_forms.sass */
+/* line 349, ../../sass/elements/_forms.sass */
 input[type="checkbox"] + label:before {
   content: " ";
   color: #E4E9F2;
@@ -1161,7 +1154,7 @@ input[type="checkbox"] + label:before {
   border-radius: 4px;
 }
 
-/* line 367, ../../sass/elements/_forms.sass */
+/* line 364, ../../sass/elements/_forms.sass */
 input[type="checkbox"]:checked + label:before {
   content: "✓";
   color: #19191F;
@@ -1169,22 +1162,22 @@ input[type="checkbox"]:checked + label:before {
   border: 0 solid #19191F;
 }
 
-/* line 374, ../../sass/elements/_forms.sass */
+/* line 371, ../../sass/elements/_forms.sass */
 input[type="radio"]:disabled + label {
   cursor: not-allowed;
   color: #F5F7FA;
 }
-/* line 377, ../../sass/elements/_forms.sass */
+/* line 374, ../../sass/elements/_forms.sass */
 input[type="radio"]:disabled + label:before {
   background-color: #F5F7FA;
   color: #b1c1d8 !important;
   border: 1px solid #b1c1d8 !important;
 }
-/* line 381, ../../sass/elements/_forms.sass */
+/* line 378, ../../sass/elements/_forms.sass */
 input[type="radio"]:disabled + label:after {
   color: #b1c1d8 !important;
 }
-/* line 383, ../../sass/elements/_forms.sass */
+/* line 380, ../../sass/elements/_forms.sass */
 input[type="radio"] + label {
   display: block;
   width: auto;
@@ -1197,7 +1190,7 @@ input[type="radio"] + label {
   line-height: 1.4;
   font-size: 1rem;
 }
-/* line 394, ../../sass/elements/_forms.sass */
+/* line 391, ../../sass/elements/_forms.sass */
 input[type="radio"] + label:before {
   content: " ";
   color: #E4E9F2;
@@ -1212,12 +1205,12 @@ input[type="radio"] + label:before {
   border-radius: 50%;
 }
 
-/* line 408, ../../sass/elements/_forms.sass */
+/* line 405, ../../sass/elements/_forms.sass */
 input[type="radio"]:checked + label:before {
   color: #19191F;
   border: 0 solid #19191F;
 }
-/* line 411, ../../sass/elements/_forms.sass */
+/* line 408, ../../sass/elements/_forms.sass */
 input[type="radio"]:checked + label:after {
   content: "•";
   position: absolute;
@@ -1228,24 +1221,24 @@ input[type="radio"]:checked + label:after {
   color: inherit;
 }
 
-/* line 425, ../../sass/elements/_forms.sass */
+/* line 422, ../../sass/elements/_forms.sass */
 label.toggle {
   position: relative;
   height: 30px;
   margin-bottom: 10px;
   display: block;
 }
-/* line 431, ../../sass/elements/_forms.sass */
+/* line 428, ../../sass/elements/_forms.sass */
 label.toggle input[type="checkbox"]:checked + div {
   background-color: #19191F;
   border: 2px solid #19191F;
 }
-/* line 434, ../../sass/elements/_forms.sass */
+/* line 431, ../../sass/elements/_forms.sass */
 label.toggle input[type="checkbox"]:checked + div .toggle-circle {
   background: white;
   left: 42px;
 }
-/* line 437, ../../sass/elements/_forms.sass */
+/* line 434, ../../sass/elements/_forms.sass */
 label.toggle input[type="checkbox"]:checked + div .toggle-circle:after {
   content: "ON";
   position: absolute;
@@ -1254,7 +1247,7 @@ label.toggle input[type="checkbox"]:checked + div .toggle-circle:after {
   line-height: 21px;
   transition: 0.25s ease-in-out;
 }
-/* line 444, ../../sass/elements/_forms.sass */
+/* line 441, ../../sass/elements/_forms.sass */
 label.toggle input[type="checkbox"] + div {
   overflow: hidden;
   width: 70px;
@@ -1266,7 +1259,7 @@ label.toggle input[type="checkbox"] + div {
   cursor: pointer;
   transition: 0.25s ease-in-out;
 }
-/* line 454, ../../sass/elements/_forms.sass */
+/* line 451, ../../sass/elements/_forms.sass */
 label.toggle input[type="checkbox"] + div .toggle-circle {
   height: 20px;
   width: 20px;
@@ -1277,7 +1270,7 @@ label.toggle input[type="checkbox"] + div .toggle-circle {
   top: 3px;
   transition: 0.25s ease-in-out;
 }
-/* line 463, ../../sass/elements/_forms.sass */
+/* line 460, ../../sass/elements/_forms.sass */
 label.toggle input[type="checkbox"] + div .toggle-circle:after {
   content: "OFF";
   position: absolute;
@@ -1285,7 +1278,7 @@ label.toggle input[type="checkbox"] + div .toggle-circle:after {
   color: #E4E9F2;
   line-height: 21px;
 }
-/* line 469, ../../sass/elements/_forms.sass */
+/* line 466, ../../sass/elements/_forms.sass */
 label.toggle > span {
   position: relative;
   right: -80px;
@@ -1295,13 +1288,13 @@ label.toggle > span {
 }
 
 @media (min-width: 768px) {
-  /* line 489, ../../sass/elements/_forms.sass */
+  /* line 486, ../../sass/elements/_forms.sass */
   .form-inline .form-group {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 493, ../../sass/elements/_forms.sass */
+  /* line 490, ../../sass/elements/_forms.sass */
   .form-inline select,
   .form-inline textarea,
   .form-inline input,
@@ -1324,11 +1317,11 @@ label.toggle > span {
     vertical-align: middle;
     margin: 0;
   }
-  /* line 516, ../../sass/elements/_forms.sass */
+  /* line 513, ../../sass/elements/_forms.sass */
   .form-inline .input-group > .form-control {
     width: 100%;
   }
-  /* line 519, ../../sass/elements/_forms.sass */
+  /* line 516, ../../sass/elements/_forms.sass */
   .form-inline .control-label {
     margin-bottom: 0;
     vertical-align: middle;
