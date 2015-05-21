@@ -1,3 +1,28 @@
+// custom cart
+.custom-cart 
+  position: fixed
+  top: 10px
+  opacity: 1
+  .font-smoothing
+    color: black
+    visibility: visible
+  .nav-font
+    font-size: 13px
+    letter-spacing: 1px
+    z-index: 1101
+  .sqs-cart-quantity 
+    display: inline
+  a,
+  a:visited 
+    display: block
+    color: black
+    padding: 12px
+    white-space: nowrap
+    line-height: 1em
+
+.sqs-add-to-cart-button-wrapper
+  visibility: visible !important
+
 // Overides to the Squarespace grid system
 .sqs-layout > .sqs-row
   margin-left: -10px
@@ -27,8 +52,9 @@ body:not(.button-style-default) .sqs-editable-button-font,
   font-weight: $baseFontWeight !important
   letter-spacing: 0 !important
   text-transform: capitalize !important
-  padding: 12px 40px !important
+  padding: 20px 40px !important
   background: $black !important
+  font-size: 1rem
 
 
 //Image Overlay
