@@ -1905,12 +1905,17 @@ body.parking {
   background-color: #A9D880;
 }
 
-/* line 33, ../../sass/elements/_layout.sass */
+/* line 32, ../../sass/elements/_layout.sass */
+body.contact-us {
+  background-color: #DEDEDE;
+}
+
+/* line 36, ../../sass/elements/_layout.sass */
 .hot-dog {
   padding: 120px 0;
 }
 
-/* line 37, ../../sass/elements/_layout.sass */
+/* line 40, ../../sass/elements/_layout.sass */
 .content-wrap {
   position: relative;
   -webkit-transform: translate3d(0, 0, 0);
@@ -1918,18 +1923,18 @@ body.parking {
   transition: opacity 0.44s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.11s, -webkit-transform 0.44s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.11s;
   transition: opacity 0.44s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.11s, transform 0.44s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.11s;
 }
-/* line 41, ../../sass/elements/_layout.sass */
+/* line 44, ../../sass/elements/_layout.sass */
 .content-wrap.loading {
   -webkit-animation: fadeOut 1s;
           animation: fadeOut 1s;
 }
-/* line 43, ../../sass/elements/_layout.sass */
+/* line 46, ../../sass/elements/_layout.sass */
 .content-wrap.loaded {
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
 }
 
-/* line 52, ../../sass/elements/_layout.sass */
+/* line 55, ../../sass/elements/_layout.sass */
 .site-wrap {
   height: 100%;
 }
@@ -1943,7 +1948,7 @@ body.parking {
   clear: both;
 }
 
-/* line 56, ../../sass/elements/_layout.sass */
+/* line 59, ../../sass/elements/_layout.sass */
 .inner-container {
   position: relative;
   width: 80%;
@@ -1952,24 +1957,24 @@ body.parking {
   margin: 0 auto;
 }
 
-/* line 63, ../../sass/elements/_layout.sass */
+/* line 66, ../../sass/elements/_layout.sass */
 .content {
   margin: 0;
   padding: 0;
 }
 
-/* line 67, ../../sass/elements/_layout.sass */
+/* line 70, ../../sass/elements/_layout.sass */
 .centered {
   max-width: 1300px;
   margin: 100px auto 50px;
   padding: 0 20px;
 }
-/* line 71, ../../sass/elements/_layout.sass */
+/* line 74, ../../sass/elements/_layout.sass */
 .centered .header-title {
   padding: 0 0 60px 0;
 }
 
-/* line 74, ../../sass/elements/_layout.sass */
+/* line 77, ../../sass/elements/_layout.sass */
 .basic-page {
   width: 95%;
   max-width: 1300px;
@@ -1977,17 +1982,17 @@ body.parking {
   padding: 100px 0;
 }
 
-/* line 80, ../../sass/elements/_layout.sass */
+/* line 83, ../../sass/elements/_layout.sass */
 .padding-top {
   margin: 0 auto 50px;
 }
 
-/* line 83, ../../sass/elements/_layout.sass */
+/* line 86, ../../sass/elements/_layout.sass */
 .full-width {
   padding: 0;
 }
 
-/* line 86, ../../sass/elements/_layout.sass */
+/* line 89, ../../sass/elements/_layout.sass */
 .container {
   width: 100%;
   min-height: 600px;
@@ -1996,23 +2001,23 @@ body.parking {
   padding-top: 0;
   background: white;
 }
-/* line 93, ../../sass/elements/_layout.sass */
+/* line 96, ../../sass/elements/_layout.sass */
 .container > header {
   padding: 30px 20px;
 }
-/* line 95, ../../sass/elements/_layout.sass */
+/* line 98, ../../sass/elements/_layout.sass */
 .container > header h1 {
   margin-bottom: 0;
 }
 
-/* line 98, ../../sass/elements/_layout.sass */
+/* line 101, ../../sass/elements/_layout.sass */
 .dots {
   text-align: center;
   font-size: 1.6em;
   line-height: 0.2em;
 }
 
-/* line 103, ../../sass/elements/_layout.sass */
+/* line 106, ../../sass/elements/_layout.sass */
 .back-to-top {
   visibility: hidden;
   opacity: 0;
@@ -2029,7 +2034,7 @@ body.parking {
   cursor: pointer;
   transition: 300ms ease-in-out;
 }
-/* line 118, ../../sass/elements/_layout.sass */
+/* line 121, ../../sass/elements/_layout.sass */
 .back-to-top.visible {
   visibility: visible;
   opacity: 1;
@@ -2056,7 +2061,7 @@ body.parking {
             transform: rotate(360deg);
   }
 }
-/* line 130, ../../sass/elements/_layout.sass */
+/* line 133, ../../sass/elements/_layout.sass */
 .page-loader {
   position: fixed;
   top: 0;
@@ -2068,7 +2073,7 @@ body.parking {
   background: white;
 }
 
-/* line 140, ../../sass/elements/_layout.sass */
+/* line 143, ../../sass/elements/_layout.sass */
 .spinner {
   position: absolute;
   left: 50%;
@@ -2092,13 +2097,13 @@ body.parking {
   transition: 500ms ease-out;
 }
 
-/* line 158, ../../sass/elements/_layout.sass */
+/* line 161, ../../sass/elements/_layout.sass */
 .page-loader.loaded .spinner {
   opacity: 0;
 }
 
 @media(max-width: 850px) {
-  /* line 165, ../../sass/elements/_layout.sass */
+  /* line 168, ../../sass/elements/_layout.sass */
   .back-to-top {
     right: 10px;
     bottom: 10px;
