@@ -1,3 +1,13 @@
+@keyframes bounce
+  0%
+    transform: translateY(0)
+  33%
+    transform: translateY(-10px)
+  66%
+    transform: translateY(10px)
+  99%
+    transform: translateY(0)
+
 .logo
   position: relative
   left: -35px
@@ -10,6 +20,7 @@
   width: 50%
   transform: rotate(-4deg)
   transition: background-color .662s cubic-bezier(.25,.46,.45,.94)
+  animation: bounce 2s infinite
 
 body.about
   .menu i > span > p
