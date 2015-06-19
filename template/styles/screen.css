@@ -2568,8 +2568,8 @@ blockquote span {
             transform: translate(0, 0);
   }
   65% {
-    -webkit-transform: translate(0, 7px);
-            transform: translate(0, 7px);
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
   }
   to {
     -webkit-transform: translate(0, 0);
@@ -2583,8 +2583,8 @@ blockquote span {
             transform: translate(0, 0);
   }
   65% {
-    -webkit-transform: translate(0, 7px);
-            transform: translate(0, 7px);
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
   }
   to {
     -webkit-transform: translate(0, 0);
@@ -2881,14 +2881,20 @@ body.about .menu i > span > p {
   /* line 208, ../../sass/pages/_header.sass */
   .logo {
     width: 80%;
-    -webkit-mask-size: 220px 200px;
-            mask-size: 220px 200px;
+    -webkit-mask-size: 170px 200px;
+            mask-size: 170px 200px;
+    height: 155px;
   }
 
-  /* line 211, ../../sass/pages/_header.sass */
+  /* line 212, ../../sass/pages/_header.sass */
   h1 {
     font-size: 7vh;
     margin-bottom: 0;
+  }
+
+  /* line 215, ../../sass/pages/_header.sass */
+  .hot-dog {
+    padding: 50px 0;
   }
 }
 /* line 1, ../../sass/pages/_event.sass */
